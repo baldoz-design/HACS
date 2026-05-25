@@ -1,0 +1,130 @@
+dst_services:
+  - id: 1
+    name: "IT Architecture Review"
+    description: "Assessment and optimisation of IT architecture, infrastructure, and technology stacks"
+    hacs_fields: [1, 4]
+    delivery_strength: 4
+
+  - id: 2
+    name: "Digital Transformation Roadmap"
+    description: "Strategic planning and sequencing of digital transformation initiatives"
+    hacs_fields: [1, 4]
+    delivery_strength: 5
+
+  - id: 3
+    name: "PMO Setup & Governance"
+    description: "Establishing project management offices, governance structures, and delivery frameworks"
+    hacs_fields: [2]
+    delivery_strength: 5
+
+  - id: 4
+    name: "Data Governance Framework"
+    description: "Design and implementation of data management, quality, and governance frameworks"
+    hacs_fields: [4]
+    delivery_strength: 4
+
+  - id: 5
+    name: "Cybersecurity Assessment"
+    description: "Evaluation of cybersecurity posture and implementation of remediation plans"
+    hacs_fields: [1, 5]
+    delivery_strength: 3
+
+  - id: 6
+    name: "Change Management Programme"
+    description: "Structured change management and adoption programmes for digital initiatives"
+    hacs_fields: [3]
+    delivery_strength: 4
+
+  - id: 7
+    name: "Process Optimisation & Automation"
+    description: "Business process analysis, optimisation, and automation using modern tools"
+    hacs_fields: [2, 3]
+    delivery_strength: 4
+
+  - id: 8
+    name: "Internal Audit Support"
+    description: "Supporting internal audit functions, control frameworks, and risk registers"
+    hacs_fields: [5]
+    delivery_strength: 3
+
+bcg_services:
+  - id: 101
+    name: "Executive Strategy Advisory"
+    description: "High-level strategic guidance to senior leadership and executive sponsors"
+    hacs_fields: [1, 4]
+    delivery_strength: 5
+
+  - id: 102
+    name: "Target Operating Model Design"
+    description: "Designing future-state operating models aligned to strategic priorities"
+    hacs_fields: [3]
+    delivery_strength: 5
+
+  - id: 103
+    name: "Programme Governance"
+    description: "Independent oversight and governance of complex transformation programmes"
+    hacs_fields: [2]
+    delivery_strength: 4
+
+  - id: 104
+    name: "AI & Data Strategy"
+    description: "Developing AI adoption strategies, data platforms, and analytics capabilities"
+    hacs_fields: [4]
+    delivery_strength: 5
+
+  - id: 105
+    name: "Organisational Performance"
+    description: "Identifying and implementing organisational effectiveness and efficiency improvements"
+    hacs_fields: [3, 5]
+    delivery_strength: 4
+
+  - id: 106
+    name: "Regulatory & Policy Advisory"
+    description: "Analysis of regulatory environment and strategic advice on policy implications"
+    hacs_fields: [1, 5]
+    delivery_strength: 4
+
+  - id: 107
+    name: "Stakeholder & Change Leadership"
+    description: "Managing complex stakeholder landscapes and leading organisational change"
+    hacs_fields: [3]
+    delivery_strength: 3
+
+  - id: 108
+    name: "Risk & Compliance Framework"
+    description: "Comprehensive risk assessment, control design, and compliance management"
+    hacs_fields: [5]
+    delivery_strength: 4
+
+combined_packages:
+  - id: 201
+    name: "Digital Governance Package"
+    provider_lead: "bcg"
+    dst_service_ids: [2, 4]
+    bcg_service_ids: [101, 104]
+    target_fields: [1, 4]
+    description: "BCG-led digital and data governance strategy with DST delivery and implementation"
+
+  - id: 202
+    name: "Transformation Delivery Package"
+    provider_lead: "dst"
+    dst_service_ids: [6, 7]
+    bcg_service_ids: [102, 103]
+    target_fields: [2, 3]
+    description: "DST-led operational delivery with BCG transformation design and governance"
+
+  - id: 203
+    name: "Audit & Compliance Package"
+    provider_lead: "bcg"
+    dst_service_ids: [5, 8]
+    bcg_service_ids: [105, 106, 108]
+    target_fields: [5]
+    description: "Comprehensive audit and compliance offering combining BCG risk frameworks and DST tooling"
+
+  - id: 204
+    name: "IT Strategy & PMO Package"
+    provider_lead: "dst"
+    dst_service_ids: [1, 3]
+    bcg_service_ids: [101, 103]
+    target_fields: [1, 2]
+    description: "DST-led IT strategy and PMO setup with BCG executive governance"
