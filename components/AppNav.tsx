@@ -10,7 +10,7 @@ const NAV_LINKS = [
   { href: "/dg-strategy", label: "DG Strategy" },
   { href: "/non-dg-strategy", label: "Non-DG Strategy" },
   { href: "/ted-spend", label: "TED Spend" },
-  { href: "/competitors", label: "Magicissimi" },
+  { href: "/competitors", label: "Competitors" },
 ];
 
 function AIBadge() {
