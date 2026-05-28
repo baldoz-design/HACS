@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState, useCallback } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useSearchParams } from "next/navigation";
 import { useProposalStore } from "@/lib/proposalStore";
 import { HACS_FIELDS } from "@/lib/types";
@@ -292,6 +292,7 @@ function ScenarioCard({
 export function ProposeLab() {
   const searchParams = useSearchParams();
   const prefilledEntityId = searchParams.get("entity");
+  const prefilledField = searchParams.get("field");
 
   const store = useProposalStore();
   const {
@@ -306,6 +307,18 @@ export function ProposeLab() {
     isLoading,
     error,
     savedScenarios,
+    setEntityId,
+    setField,
+    setLoading,
+    setError,
+    setScore,
+    setSavedScenarios,
+    addSavedScenario,
+    toggleDstService,
+    toggleBcgService,
+    setPosture,
+    setTeamDays,
+    loadScenario,
   } = store;
 
   const [entities, setEntities] = useState<ApiEntity[]>([]);
@@ -330,31 +343,34 @@ export function ProposeLab() {
         // Pre-fill from URL param
         if (prefilledEntityId) {
           const id = parseInt(prefilledEntityId);
-          if (!isNaN(id)) store.setEntityId(id);
+          if (!isNaN(id)) setEntityId(id);
+        }
+        if (prefilledField) {
+          const field = parseInt(prefilledField);
+          if (!isNaN(field)) setField(field);
         }
       })
       .catch(() => {
         setDataError("Cannot reach backend — is the API server running on port 8001?");
         setLoadingData(false);
       });
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [prefilledEntityId, prefilledField, setEntityId, setField]);
 
   // Load saved scenarios when entity changes
   useEffect(() => {
     if (!entity_id) return;
     fetchScenarios(entity_id)
-      .then(store.setSavedScenarios)
+      .then(setSavedScenarios)
       .catch(() => {});
-  }, [entity_id]);
+  }, [entity_id, setSavedScenarios]);
 
   // Debounced compute
   useEffect(() => {
     if (!entity_id || !hacs_field || !price_posture) return;
     if (debounceRef.current) clearTimeout(debounceRef.current);
     debounceRef.current = setTimeout(async () => {
-      store.setLoading(true);
-      store.setError(null);
+      setLoading(true);
+      setError(null);
       try {
         const result = await computeScenario({
           entity_id,
@@ -365,18 +381,29 @@ export function ProposeLab() {
           price_posture,
           team_mix,
         });
-        store.setScore(result);
+        setScore(result);
       } catch {
-        store.setError("Score unavailable — check backend connection.");
-        store.setScore(null);
+        setError("Score unavailable — check backend connection.");
+        setScore(null);
       } finally {
-        store.setLoading(false);
+        setLoading(false);
       }
     }, 300);
     return () => {
       if (debounceRef.current) clearTimeout(debounceRef.current);
     };
-  }, [entity_id, hacs_field, provider_mix, dst_service_ids, bcg_service_ids, price_posture, team_mix]);
+  }, [
+    bcg_service_ids,
+    dst_service_ids,
+    entity_id,
+    hacs_field,
+    price_posture,
+    provider_mix,
+    setError,
+    setLoading,
+    setScore,
+    team_mix,
+  ]);
 
   async function handleSave() {
     if (!entity_id || !hacs_field || !price_posture) return;
@@ -391,7 +418,7 @@ export function ProposeLab() {
         price_posture,
         team_mix,
       });
-      store.addSavedScenario(saved);
+      addSavedScenario(saved);
       setSaveSuccess(true);
       setTimeout(() => setSaveSuccess(false), 2000);
     } catch {
@@ -535,7 +562,7 @@ export function ProposeLab() {
                     <input
                       type="checkbox"
                       checked={dst_service_ids.includes(s.id)}
-                      onChange={() => store.toggleDstService(s.id)}
+                      onChange={() => toggleDstService(s.id)}
                       className="mt-0.5 accent-[var(--accent)]"
                     />
                     <span className="text-xs text-[var(--text-1)] leading-tight">
@@ -570,7 +597,7 @@ export function ProposeLab() {
                     <input
                       type="checkbox"
                       checked={bcg_service_ids.includes(s.id)}
-                      onChange={() => store.toggleBcgService(s.id)}
+                      onChange={() => toggleBcgService(s.id)}
                       className="mt-0.5 accent-[var(--accent)]"
                     />
                     <span className="text-xs text-[var(--text-1)] leading-tight">
@@ -617,7 +644,7 @@ export function ProposeLab() {
                     type="radio"
                     name="price_posture"
                     checked={price_posture === key}
-                    onChange={() => store.setPosture(key)}
+                    onChange={() => setPosture(key)}
                     className="mt-0.5 accent-[var(--accent)]"
                   />
                   <span className="text-xs text-[var(--text-1)]">
@@ -634,7 +661,7 @@ export function ProposeLab() {
             <SectionLabel>Team Mix (days)</SectionLabel>
             <TeamMixTable
               team_mix={team_mix}
-              onChange={store.setTeamDays}
+              onChange={setTeamDays}
             />
           </div>
         </div>
@@ -843,7 +870,7 @@ export function ProposeLab() {
                 <ScenarioCard
                   key={s.id}
                   scenario={s}
-                  onLoad={() => store.loadScenario(s)}
+                  onLoad={() => loadScenario(s)}
                 />
               ))}
             </div>

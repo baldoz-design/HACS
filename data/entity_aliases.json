@@ -1,0 +1,60 @@
+{
+  "AMLA": [
+    "Authority for Anti-Money Laundering and Countering the Financing of Terrorism"
+  ],
+  "CdT": [
+    "Translation Centre for the Bodies of the European Union"
+  ],
+  "EASA": [
+    "European Union Aviation Safety Agency"
+  ],
+  "ENISA": [
+    "European Union Agency for Cybersecurity"
+  ],
+  "EUIPO": [
+    "European Union Intellectual Property Office"
+  ],
+  "FRA": [
+    "European Union Agency for Fundamental Rights"
+  ],
+  "EUROPOL": [
+    "European Union Agency for Law Enforcement Cooperation",
+    "EU Agency for Law Enforcement Cooperation"
+  ],
+  "CH_JU": [
+    "Clean Hydrogen Joint Undertaking",
+    "Clean Hydrogen JU",
+    "Clean Hydrogen Partnership"
+  ],
+  "ECCC": [
+    "European Cybersecurity Competence Centre"
+  ],
+  "ECDC": [
+    "European Centre for Disease Prevention and Control"
+  ],
+  "EEA": [
+    "European Environment Agency"
+  ],
+  "EIOPA": [
+    "European Insurance and Occupational Pensions Authority"
+  ],
+  "HADEA": [
+    "European Health and Digital Executive Agency",
+    "Health and Digital Executive Agency"
+  ],
+  "EESC": [
+    "European Economic and Social Committee"
+  ],
+  "EP": [
+    "European Parliament"
+  ],
+  "DG_DIGIT": [
+    "European Commission, DG DIGIT - Directorate-General for Informatics"
+  ],
+  "DG_MOVE": [
+    "European Commission, DG MOVE - Directorate-General for Mobility and Transport"
+  ],
+  "EC": [
+    "European Commission"
+  ]
+}

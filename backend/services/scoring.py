@@ -1,7 +1,7 @@
 import json
 from typing import List, Optional
 
-from models import Entity, ProviderService, TeamMix, Explanation
+from backend.models import Entity, ProviderService, TeamMix, Explanation
 
 
 def _parse_fields(svc: ProviderService) -> List[int]:
@@ -104,7 +104,7 @@ def bid_recommendation(total_score: float) -> str:
 
 
 def lead_provider(provider_mix: str) -> str:
-    labels = {"dst": "DST", "bcg": "BCG", "combined": "DST + BCG"}
+    labels = {"dst": "Dst", "bcg": "BCG", "combined": "Dst + BCG"}
     return labels.get(provider_mix, provider_mix.upper())
 
 
@@ -143,7 +143,7 @@ def build_explanation(
 
     risks = []
     if not dst_field:
-        risks.append("No DST services selected cover this HACS field")
+        risks.append("No Dst services selected cover this HACS field")
     if not bcg_field:
         risks.append("No BCG services selected cover this HACS field")
     if entity.relationship_signal == "none":

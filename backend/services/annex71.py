@@ -5,8 +5,8 @@ import logging
 
 from sqlmodel import Session, select
 
-from models import PastAllocation, ImportLog
-from services.entity_matcher import match_entity
+from backend.models import PastAllocation, ImportLog
+from backend.services.entity_matcher import match_entity
 
 logger = logging.getLogger(__name__)
 
@@ -117,6 +117,7 @@ def parse_annex71(session: Session) -> int:
             entity_name_raw=str(entity_name_raw),
             client_name=str(client_name) if client_name else "",
             contract_title=str(contract_title),
+            supplier_name=None,
             contract_start=contract_start,
             contract_end=contract_end,
             contract_value_eur=contract_value,
@@ -124,6 +125,10 @@ def parse_annex71(session: Session) -> int:
             role=str(role) if role else None,
             hacs_field=hacs_field,
             field_of_expertise=str(field_raw) if field_raw else None,
+            framework_reference=None,
+            lot_reference=None,
+            source_url=None,
+            confidence_of_match=1.0 if entity_id is not None else None,
             source="annex71",
         ))
         count += 1

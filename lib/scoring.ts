@@ -1,4 +1,4 @@
-import type { Entity, EntityWithScore, CLUSTER_BUDGETS } from "./types";
+import type { Entity, EntityWithScore } from "./types";
 import { CLUSTER_BUDGETS as BUDGETS } from "./types";
 import rawEntities from "@/data/entities.json";
 
@@ -15,9 +15,8 @@ function normalize(value: number, min: number, max: number): number {
   return Math.max(0, Math.min(1, (value - min) / (max - min)));
 }
 
-export function computePriorityScore(entity: Entity, clusterEntityCount: number): number {
+export function computePriorityScore(entity: Entity): number {
   const clusterBudget = BUDGETS[entity.cluster] ?? 0;
-  const sharePerEntity = clusterEntityCount > 0 ? clusterBudget / clusterEntityCount : 0;
 
   const cluster_weight = normalize(clusterBudget, 0, 82_500_000) * 0.40;
 
@@ -45,7 +44,7 @@ export function enrichEntities(entities: Entity[]): EntityWithScore[] {
     const clusterBudget = BUDGETS[e.cluster] ?? 0;
     return {
       ...e,
-      priority_score: computePriorityScore(e, count),
+      priority_score: computePriorityScore(e),
       cluster_budget_eur: clusterBudget,
       cluster_share_eur: Math.round(clusterBudget / count),
       cluster_entity_count: count,

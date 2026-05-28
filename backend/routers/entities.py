@@ -2,8 +2,8 @@ from typing import List
 from fastapi import APIRouter, Depends, HTTPException
 from sqlmodel import Session, select
 
-from db import get_session
-from models import Entity
+from backend.db import get_session
+from backend.models import Entity
 
 router = APIRouter(prefix="/api/entities", tags=["entities"])
 

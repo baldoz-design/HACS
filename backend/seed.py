@@ -3,9 +3,9 @@ from pathlib import Path
 import yaml
 from sqlmodel import Session, select
 
-from db import engine
-from models import Entity, ProviderService, CombinedPackage, PastAllocation
-from services import annex71 as annex71_svc
+from backend.db import engine
+from backend.models import Entity, ProviderService, CombinedPackage, PastAllocation
+from backend.services import annex71 as annex71_svc
 
 DATA_DIR = Path(__file__).parent.parent / "data"
 ENTITIES_FILE = DATA_DIR / "entities.json"

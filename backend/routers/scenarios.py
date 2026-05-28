@@ -3,12 +3,12 @@ from typing import List, Optional
 from fastapi import APIRouter, Depends, HTTPException, Query
 from sqlmodel import Session, select
 
-from db import get_session
-from models import (
+from backend.db import get_session
+from backend.models import (
     Entity, ProviderService, Scenario,
     ComputeRequest, ComputeResult, SaveScenarioRequest, ScenarioOut,
 )
-from services.scoring import (
+from backend.services.scoring import (
     compute_fit_scores,
     compute_technical_score,
     compute_financial_score,

@@ -1,0 +1,2273 @@
+{
+  "framework_reference": "DIGIT/2020/OP/0005",
+  "total_entities": 103,
+  "covered_entities": 5,
+  "rows": [
+    {
+      "entity_id": 1,
+      "acronym": "AMLA",
+      "name": "Authority for Anti-Money Laundering",
+      "cluster": "Frankfurt",
+      "country": "Germany",
+      "is_ec_dg": false,
+      "status": "follow_up_needed",
+      "coverage_wave": 3,
+      "target_source_types": [
+        "annual_contracts",
+        "contracts_awarded",
+        "specific_contracts"
+      ],
+      "search_queries": [
+        "site:.europa.eu \"Authority for Anti-Money Laundering\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"Authority for Anti-Money Laundering\" \"BEACON\"",
+        "site:.europa.eu \"AMLA\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"Authority for Anti-Money Laundering\" \"annual list of contracts\" pdf",
+        "site:.europa.eu \"Authority for Anti-Money Laundering\" \"specific contract\" pdf"
+      ]
+    },
+    {
+      "entity_id": 2,
+      "acronym": "BEREC",
+      "name": "Agency for Support for BEREC",
+      "cluster": "Other",
+      "country": "Latvia",
+      "is_ec_dg": false,
+      "status": "checked_no_public_beacon_evidence",
+      "coverage_wave": 3,
+      "target_source_types": [
+        "annual_contracts",
+        "contracts_awarded",
+        "specific_contracts"
+      ],
+      "search_queries": [
+        "site:.europa.eu \"Agency for Support for BEREC\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"Agency for Support for BEREC\" \"BEACON\"",
+        "site:.europa.eu \"BEREC\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"Agency for Support for BEREC\" \"annual list of contracts\" pdf",
+        "site:.europa.eu \"Agency for Support for BEREC\" \"specific contract\" pdf"
+      ]
+    },
+    {
+      "entity_id": 3,
+      "acronym": "CA_JU",
+      "name": "Clean Aviation Joint Undertaking",
+      "cluster": "Brussels",
+      "country": "Belgium",
+      "is_ec_dg": false,
+      "status": "checked_no_public_beacon_evidence",
+      "coverage_wave": 2,
+      "target_source_types": [
+        "specific_contracts",
+        "annual_contracts",
+        "programme_contract_pages"
+      ],
+      "search_queries": [
+        "site:.europa.eu \"Clean Aviation Joint Undertaking\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"Clean Aviation Joint Undertaking\" \"BEACON\"",
+        "site:.europa.eu \"CA_JU\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"Clean Aviation Joint Undertaking\" \"annual list of contracts\" pdf",
+        "site:.europa.eu \"Clean Aviation Joint Undertaking\" \"specific contract\" pdf"
+      ]
+    },
+    {
+      "entity_id": 4,
+      "acronym": "CBE_JU",
+      "name": "Circular Bio-based Europe Joint Undertaking",
+      "cluster": "Brussels",
+      "country": "Belgium",
+      "is_ec_dg": false,
+      "status": "checked_no_public_beacon_evidence",
+      "coverage_wave": 2,
+      "target_source_types": [
+        "specific_contracts",
+        "annual_contracts",
+        "programme_contract_pages"
+      ],
+      "search_queries": [
+        "site:.europa.eu \"Circular Bio-based Europe Joint Undertaking\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"Circular Bio-based Europe Joint Undertaking\" \"BEACON\"",
+        "site:.europa.eu \"CBE_JU\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"Circular Bio-based Europe Joint Undertaking\" \"annual list of contracts\" pdf",
+        "site:.europa.eu \"Circular Bio-based Europe Joint Undertaking\" \"specific contract\" pdf"
+      ]
+    },
+    {
+      "entity_id": 5,
+      "acronym": "CdT",
+      "name": "Translation Centre for EU Bodies",
+      "cluster": "Luxembourg",
+      "country": "Luxembourg",
+      "is_ec_dg": false,
+      "status": "checked_no_public_beacon_evidence",
+      "coverage_wave": 2,
+      "target_source_types": [
+        "annual_contracts",
+        "contracts_awarded",
+        "specific_contracts"
+      ],
+      "search_queries": [
+        "site:.europa.eu \"Translation Centre for EU Bodies\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"Translation Centre for EU Bodies\" \"BEACON\"",
+        "site:.europa.eu \"CdT\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"Translation Centre for EU Bodies\" \"annual list of contracts\" pdf",
+        "site:.europa.eu \"Translation Centre for EU Bodies\" \"specific contract\" pdf"
+      ]
+    },
+    {
+      "entity_id": 6,
+      "acronym": "CEDEFOP",
+      "name": "European Centre for Vocational Training",
+      "cluster": "Other",
+      "country": "Greece",
+      "is_ec_dg": false,
+      "status": "checked_no_public_beacon_evidence",
+      "coverage_wave": 3,
+      "target_source_types": [
+        "annual_contracts",
+        "contracts_awarded",
+        "specific_contracts"
+      ],
+      "search_queries": [
+        "site:.europa.eu \"European Centre for Vocational Training\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"European Centre for Vocational Training\" \"BEACON\"",
+        "site:.europa.eu \"CEDEFOP\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"European Centre for Vocational Training\" \"annual list of contracts\" pdf",
+        "site:.europa.eu \"European Centre for Vocational Training\" \"specific contract\" pdf"
+      ]
+    },
+    {
+      "entity_id": 7,
+      "acronym": "CEPOL",
+      "name": "EU Agency for Law Enforcement Training",
+      "cluster": "Other",
+      "country": "Hungary",
+      "is_ec_dg": false,
+      "status": "indirect_only",
+      "coverage_wave": 3,
+      "target_source_types": [
+        "annual_contracts",
+        "contracts_awarded",
+        "specific_contracts"
+      ],
+      "search_queries": [
+        "site:.europa.eu \"EU Agency for Law Enforcement Training\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"EU Agency for Law Enforcement Training\" \"BEACON\"",
+        "site:.europa.eu \"CEPOL\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"EU Agency for Law Enforcement Training\" \"annual list of contracts\" pdf",
+        "site:.europa.eu \"EU Agency for Law Enforcement Training\" \"specific contract\" pdf"
+      ]
+    },
+    {
+      "entity_id": 8,
+      "acronym": "CFSP",
+      "name": "Common Foreign and Security Policy Entities",
+      "cluster": "Brussels",
+      "country": "Belgium",
+      "is_ec_dg": false,
+      "status": "follow_up_needed",
+      "coverage_wave": 2,
+      "target_source_types": [
+        "annual_contracts",
+        "contracts_awarded",
+        "specific_contracts"
+      ],
+      "search_queries": [
+        "site:.europa.eu \"Common Foreign and Security Policy Entities\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"Common Foreign and Security Policy Entities\" \"BEACON\"",
+        "site:.europa.eu \"CFSP\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"Common Foreign and Security Policy Entities\" \"annual list of contracts\" pdf",
+        "site:.europa.eu \"Common Foreign and Security Policy Entities\" \"specific contract\" pdf"
+      ]
+    },
+    {
+      "entity_id": 9,
+      "acronym": "CJEU",
+      "name": "Court of Justice of the European Union",
+      "cluster": "Luxembourg",
+      "country": "Luxembourg",
+      "is_ec_dg": false,
+      "status": "checked_no_public_beacon_evidence",
+      "coverage_wave": 1,
+      "target_source_types": [
+        "annual_contracts",
+        "contracts_awarded",
+        "specific_contracts"
+      ],
+      "search_queries": [
+        "site:.europa.eu \"Court of Justice of the European Union\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"Court of Justice of the European Union\" \"BEACON\"",
+        "site:.europa.eu \"CJEU\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"Court of Justice of the European Union\" \"annual list of contracts\" pdf",
+        "site:.europa.eu \"Court of Justice of the European Union\" \"specific contract\" pdf"
+      ]
+    },
+    {
+      "entity_id": 10,
+      "acronym": "CH_JU",
+      "name": "Clean Hydrogen Joint Undertaking",
+      "cluster": "Brussels",
+      "country": "Belgium",
+      "is_ec_dg": false,
+      "status": "covered",
+      "coverage_wave": 0,
+      "target_source_types": [
+        "specific_contracts",
+        "annual_contracts",
+        "programme_contract_pages"
+      ],
+      "search_queries": [
+        "site:.europa.eu \"Clean Hydrogen Joint Undertaking\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"Clean Hydrogen Joint Undertaking\" \"BEACON\"",
+        "site:.europa.eu \"CH_JU\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"Clean Hydrogen Joint Undertaking\" \"annual list of contracts\" pdf",
+        "site:.europa.eu \"Clean Hydrogen Joint Undertaking\" \"specific contract\" pdf"
+      ]
+    },
+    {
+      "entity_id": 11,
+      "acronym": "CHIPS_JU",
+      "name": "Chips Joint Undertaking",
+      "cluster": "Brussels",
+      "country": "Belgium",
+      "is_ec_dg": false,
+      "status": "checked_no_public_beacon_evidence",
+      "coverage_wave": 2,
+      "target_source_types": [
+        "specific_contracts",
+        "annual_contracts",
+        "programme_contract_pages"
+      ],
+      "search_queries": [
+        "site:.europa.eu \"Chips Joint Undertaking\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"Chips Joint Undertaking\" \"BEACON\"",
+        "site:.europa.eu \"CHIPS_JU\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"Chips Joint Undertaking\" \"annual list of contracts\" pdf",
+        "site:.europa.eu \"Chips Joint Undertaking\" \"specific contract\" pdf"
+      ]
+    },
+    {
+      "entity_id": 12,
+      "acronym": "COR",
+      "name": "European Committee of the Regions",
+      "cluster": "Brussels",
+      "country": "Belgium",
+      "is_ec_dg": false,
+      "status": "checked_no_public_beacon_evidence",
+      "coverage_wave": 2,
+      "target_source_types": [
+        "annual_contracts",
+        "contracts_awarded",
+        "specific_contracts"
+      ],
+      "search_queries": [
+        "site:.europa.eu \"European Committee of the Regions\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"European Committee of the Regions\" \"BEACON\"",
+        "site:.europa.eu \"COR\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"European Committee of the Regions\" \"annual list of contracts\" pdf",
+        "site:.europa.eu \"European Committee of the Regions\" \"specific contract\" pdf"
+      ]
+    },
+    {
+      "entity_id": 13,
+      "acronym": "CPVO",
+      "name": "Community Plant Variety Office",
+      "cluster": "Other",
+      "country": "France",
+      "is_ec_dg": false,
+      "status": "indirect_only",
+      "coverage_wave": 3,
+      "target_source_types": [
+        "annual_contracts",
+        "contracts_awarded",
+        "specific_contracts"
+      ],
+      "search_queries": [
+        "site:.europa.eu \"Community Plant Variety Office\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"Community Plant Variety Office\" \"BEACON\"",
+        "site:.europa.eu \"CPVO\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"Community Plant Variety Office\" \"annual list of contracts\" pdf",
+        "site:.europa.eu \"Community Plant Variety Office\" \"specific contract\" pdf"
+      ]
+    },
+    {
+      "entity_id": 14,
+      "acronym": "EACEA",
+      "name": "European Education and Culture Executive Agency",
+      "cluster": "Brussels",
+      "country": "Belgium",
+      "is_ec_dg": false,
+      "status": "follow_up_needed",
+      "coverage_wave": 2,
+      "target_source_types": [
+        "programme_contract_pages",
+        "specific_contracts",
+        "annual_contracts"
+      ],
+      "search_queries": [
+        "site:.europa.eu \"European Education and Culture Executive Agency\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"European Education and Culture Executive Agency\" \"BEACON\"",
+        "site:.europa.eu \"EACEA\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"European Education and Culture Executive Agency\" \"annual list of contracts\" pdf",
+        "site:.europa.eu \"European Education and Culture Executive Agency\" \"specific contract\" pdf"
+      ]
+    },
+    {
+      "entity_id": 15,
+      "acronym": "EASA",
+      "name": "EU Aviation Safety Agency",
+      "cluster": "Other",
+      "country": "Germany",
+      "is_ec_dg": false,
+      "status": "checked_no_public_beacon_evidence",
+      "coverage_wave": 3,
+      "target_source_types": [
+        "annual_contracts",
+        "contracts_awarded",
+        "specific_contracts"
+      ],
+      "search_queries": [
+        "site:.europa.eu \"EU Aviation Safety Agency\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"EU Aviation Safety Agency\" \"BEACON\"",
+        "site:.europa.eu \"EASA\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"EU Aviation Safety Agency\" \"annual list of contracts\" pdf",
+        "site:.europa.eu \"EU Aviation Safety Agency\" \"specific contract\" pdf"
+      ]
+    },
+    {
+      "entity_id": 16,
+      "acronym": "EC",
+      "name": "European Commission",
+      "cluster": "Brussels",
+      "country": "Belgium",
+      "is_ec_dg": false,
+      "status": "checked_no_public_beacon_evidence",
+      "coverage_wave": 2,
+      "target_source_types": [
+        "annual_contracts",
+        "contracts_awarded",
+        "specific_contracts"
+      ],
+      "search_queries": [
+        "site:.europa.eu \"European Commission\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"European Commission\" \"BEACON\"",
+        "site:.europa.eu \"EC\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"European Commission\" \"annual list of contracts\" pdf",
+        "site:.europa.eu \"European Commission\" \"specific contract\" pdf"
+      ]
+    },
+    {
+      "entity_id": 17,
+      "acronym": "ECA",
+      "name": "European Court of Auditors",
+      "cluster": "Luxembourg",
+      "country": "Luxembourg",
+      "is_ec_dg": false,
+      "status": "checked_no_public_beacon_evidence",
+      "coverage_wave": 1,
+      "target_source_types": [
+        "annual_contracts",
+        "contracts_awarded",
+        "specific_contracts"
+      ],
+      "search_queries": [
+        "site:.europa.eu \"European Court of Auditors\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"European Court of Auditors\" \"BEACON\"",
+        "site:.europa.eu \"ECA\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"European Court of Auditors\" \"annual list of contracts\" pdf",
+        "site:.europa.eu \"European Court of Auditors\" \"specific contract\" pdf"
+      ]
+    },
+    {
+      "entity_id": 18,
+      "acronym": "ECCC",
+      "name": "EU Cybersecurity Competence Centre",
+      "cluster": "Other",
+      "country": "Latvia",
+      "is_ec_dg": false,
+      "status": "checked_no_public_beacon_evidence",
+      "coverage_wave": 3,
+      "target_source_types": [
+        "annual_contracts",
+        "contracts_awarded",
+        "specific_contracts"
+      ],
+      "search_queries": [
+        "site:.europa.eu \"EU Cybersecurity Competence Centre\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"EU Cybersecurity Competence Centre\" \"BEACON\"",
+        "site:.europa.eu \"ECCC\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"EU Cybersecurity Competence Centre\" \"annual list of contracts\" pdf",
+        "site:.europa.eu \"EU Cybersecurity Competence Centre\" \"specific contract\" pdf"
+      ]
+    },
+    {
+      "entity_id": 19,
+      "acronym": "ECDC",
+      "name": "European Centre for Disease Prevention",
+      "cluster": "Other",
+      "country": "Sweden",
+      "is_ec_dg": false,
+      "status": "indirect_only",
+      "coverage_wave": 3,
+      "target_source_types": [
+        "annual_contracts",
+        "contracts_awarded",
+        "specific_contracts"
+      ],
+      "search_queries": [
+        "site:.europa.eu \"European Centre for Disease Prevention\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"European Centre for Disease Prevention\" \"BEACON\"",
+        "site:.europa.eu \"ECDC\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"European Centre for Disease Prevention\" \"annual list of contracts\" pdf",
+        "site:.europa.eu \"European Centre for Disease Prevention\" \"specific contract\" pdf"
+      ]
+    },
+    {
+      "entity_id": 20,
+      "acronym": "ECHA",
+      "name": "European Chemicals Agency",
+      "cluster": "Other",
+      "country": "Finland",
+      "is_ec_dg": false,
+      "status": "indirect_only",
+      "coverage_wave": 3,
+      "target_source_types": [
+        "annual_contracts",
+        "contracts_awarded",
+        "specific_contracts"
+      ],
+      "search_queries": [
+        "site:.europa.eu \"European Chemicals Agency\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"European Chemicals Agency\" \"BEACON\"",
+        "site:.europa.eu \"ECHA\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"European Chemicals Agency\" \"annual list of contracts\" pdf",
+        "site:.europa.eu \"European Chemicals Agency\" \"specific contract\" pdf"
+      ]
+    },
+    {
+      "entity_id": 21,
+      "acronym": "EDA",
+      "name": "European Defence Agency",
+      "cluster": "Brussels",
+      "country": "Belgium",
+      "is_ec_dg": false,
+      "status": "indirect_only",
+      "coverage_wave": 2,
+      "target_source_types": [
+        "annual_contracts",
+        "contracts_awarded",
+        "specific_contracts"
+      ],
+      "search_queries": [
+        "site:.europa.eu \"European Defence Agency\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"European Defence Agency\" \"BEACON\"",
+        "site:.europa.eu \"EDA\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"European Defence Agency\" \"annual list of contracts\" pdf",
+        "site:.europa.eu \"European Defence Agency\" \"specific contract\" pdf"
+      ]
+    },
+    {
+      "entity_id": 22,
+      "acronym": "EDCTP3_JU",
+      "name": "Global Health EDCTP3 Joint Undertaking",
+      "cluster": "Brussels",
+      "country": "Belgium",
+      "is_ec_dg": false,
+      "status": "follow_up_needed",
+      "coverage_wave": 2,
+      "target_source_types": [
+        "specific_contracts",
+        "annual_contracts",
+        "programme_contract_pages"
+      ],
+      "search_queries": [
+        "site:.europa.eu \"Global Health EDCTP3 Joint Undertaking\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"Global Health EDCTP3 Joint Undertaking\" \"BEACON\"",
+        "site:.europa.eu \"EDCTP3_JU\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"Global Health EDCTP3 Joint Undertaking\" \"annual list of contracts\" pdf",
+        "site:.europa.eu \"Global Health EDCTP3 Joint Undertaking\" \"specific contract\" pdf"
+      ]
+    },
+    {
+      "entity_id": 23,
+      "acronym": "EDPS",
+      "name": "European Data Protection Supervisor",
+      "cluster": "Brussels",
+      "country": "Belgium",
+      "is_ec_dg": false,
+      "status": "checked_no_public_beacon_evidence",
+      "coverage_wave": 2,
+      "target_source_types": [
+        "annual_contracts",
+        "contracts_awarded",
+        "specific_contracts"
+      ],
+      "search_queries": [
+        "site:.europa.eu \"European Data Protection Supervisor\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"European Data Protection Supervisor\" \"BEACON\"",
+        "site:.europa.eu \"EDPS\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"European Data Protection Supervisor\" \"annual list of contracts\" pdf",
+        "site:.europa.eu \"European Data Protection Supervisor\" \"specific contract\" pdf"
+      ]
+    },
+    {
+      "entity_id": 24,
+      "acronym": "EEA",
+      "name": "European Environment Agency",
+      "cluster": "Other",
+      "country": "Denmark",
+      "is_ec_dg": false,
+      "status": "checked_no_public_beacon_evidence",
+      "coverage_wave": 3,
+      "target_source_types": [
+        "annual_contracts",
+        "contracts_awarded",
+        "specific_contracts"
+      ],
+      "search_queries": [
+        "site:.europa.eu \"European Environment Agency\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"European Environment Agency\" \"BEACON\"",
+        "site:.europa.eu \"EEA\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"European Environment Agency\" \"annual list of contracts\" pdf",
+        "site:.europa.eu \"European Environment Agency\" \"specific contract\" pdf"
+      ]
+    },
+    {
+      "entity_id": 25,
+      "acronym": "EEAS",
+      "name": "European External Action Service",
+      "cluster": "Brussels",
+      "country": "Belgium",
+      "is_ec_dg": false,
+      "status": "checked_no_public_beacon_evidence",
+      "coverage_wave": 1,
+      "target_source_types": [
+        "annual_contracts",
+        "contracts_awarded",
+        "specific_contracts"
+      ],
+      "search_queries": [
+        "site:.europa.eu \"European External Action Service\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"European External Action Service\" \"BEACON\"",
+        "site:.europa.eu \"EEAS\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"European External Action Service\" \"annual list of contracts\" pdf",
+        "site:.europa.eu \"European External Action Service\" \"specific contract\" pdf"
+      ]
+    },
+    {
+      "entity_id": 26,
+      "acronym": "EESC",
+      "name": "European Economic and Social Committee",
+      "cluster": "Brussels",
+      "country": "Belgium",
+      "is_ec_dg": false,
+      "status": "covered",
+      "coverage_wave": 0,
+      "target_source_types": [
+        "annual_contracts",
+        "contracts_awarded",
+        "specific_contracts"
+      ],
+      "search_queries": [
+        "site:.europa.eu \"European Economic and Social Committee\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"European Economic and Social Committee\" \"BEACON\"",
+        "site:.europa.eu \"EESC\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"European Economic and Social Committee\" \"annual list of contracts\" pdf",
+        "site:.europa.eu \"European Economic and Social Committee\" \"specific contract\" pdf"
+      ]
+    },
+    {
+      "entity_id": 27,
+      "acronym": "EFSA",
+      "name": "European Food Safety Authority",
+      "cluster": "Other",
+      "country": "Italy",
+      "is_ec_dg": false,
+      "status": "checked_no_public_beacon_evidence",
+      "coverage_wave": 3,
+      "target_source_types": [
+        "annual_contracts",
+        "contracts_awarded",
+        "specific_contracts"
+      ],
+      "search_queries": [
+        "site:.europa.eu \"European Food Safety Authority\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"European Food Safety Authority\" \"BEACON\"",
+        "site:.europa.eu \"EFSA\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"European Food Safety Authority\" \"annual list of contracts\" pdf",
+        "site:.europa.eu \"European Food Safety Authority\" \"specific contract\" pdf"
+      ]
+    },
+    {
+      "entity_id": 28,
+      "acronym": "EIB",
+      "name": "European Investment Bank",
+      "cluster": "Luxembourg",
+      "country": "Luxembourg",
+      "is_ec_dg": false,
+      "status": "checked_no_public_beacon_evidence",
+      "coverage_wave": 1,
+      "target_source_types": [
+        "annual_contracts",
+        "contracts_awarded",
+        "specific_contracts"
+      ],
+      "search_queries": [
+        "site:.europa.eu \"European Investment Bank\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"European Investment Bank\" \"BEACON\"",
+        "site:.europa.eu \"EIB\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"European Investment Bank\" \"annual list of contracts\" pdf",
+        "site:.europa.eu \"European Investment Bank\" \"specific contract\" pdf"
+      ]
+    },
+    {
+      "entity_id": 29,
+      "acronym": "EIF",
+      "name": "European Investment Fund",
+      "cluster": "Luxembourg",
+      "country": "Luxembourg",
+      "is_ec_dg": false,
+      "status": "checked_no_public_beacon_evidence",
+      "coverage_wave": 2,
+      "target_source_types": [
+        "annual_contracts",
+        "contracts_awarded",
+        "specific_contracts"
+      ],
+      "search_queries": [
+        "site:.europa.eu \"European Investment Fund\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"European Investment Fund\" \"BEACON\"",
+        "site:.europa.eu \"EIF\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"European Investment Fund\" \"annual list of contracts\" pdf",
+        "site:.europa.eu \"European Investment Fund\" \"specific contract\" pdf"
+      ]
+    },
+    {
+      "entity_id": 30,
+      "acronym": "EIGE",
+      "name": "European Institute for Gender Equality",
+      "cluster": "Other",
+      "country": "Lithuania",
+      "is_ec_dg": false,
+      "status": "checked_no_public_beacon_evidence",
+      "coverage_wave": 3,
+      "target_source_types": [
+        "annual_contracts",
+        "contracts_awarded",
+        "specific_contracts"
+      ],
+      "search_queries": [
+        "site:.europa.eu \"European Institute for Gender Equality\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"European Institute for Gender Equality\" \"BEACON\"",
+        "site:.europa.eu \"EIGE\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"European Institute for Gender Equality\" \"annual list of contracts\" pdf",
+        "site:.europa.eu \"European Institute for Gender Equality\" \"specific contract\" pdf"
+      ]
+    },
+    {
+      "entity_id": 31,
+      "acronym": "EIOPA",
+      "name": "European Insurance and Occupational Pensions Authority",
+      "cluster": "Frankfurt",
+      "country": "Germany",
+      "is_ec_dg": false,
+      "status": "checked_no_public_beacon_evidence",
+      "coverage_wave": 3,
+      "target_source_types": [
+        "annual_contracts",
+        "contracts_awarded",
+        "specific_contracts"
+      ],
+      "search_queries": [
+        "site:.europa.eu \"European Insurance and Occupational Pensions Authority\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"European Insurance and Occupational Pensions Authority\" \"BEACON\"",
+        "site:.europa.eu \"EIOPA\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"European Insurance and Occupational Pensions Authority\" \"annual list of contracts\" pdf",
+        "site:.europa.eu \"European Insurance and Occupational Pensions Authority\" \"specific contract\" pdf"
+      ]
+    },
+    {
+      "entity_id": 32,
+      "acronym": "EISMEA",
+      "name": "European Innovation Council and SMEs Executive Agency",
+      "cluster": "Brussels",
+      "country": "Belgium",
+      "is_ec_dg": false,
+      "status": "indirect_only",
+      "coverage_wave": 2,
+      "target_source_types": [
+        "programme_contract_pages",
+        "specific_contracts",
+        "annual_contracts"
+      ],
+      "search_queries": [
+        "site:.europa.eu \"European Innovation Council and SMEs Executive Agency\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"European Innovation Council and SMEs Executive Agency\" \"BEACON\"",
+        "site:.europa.eu \"EISMEA\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"European Innovation Council and SMEs Executive Agency\" \"annual list of contracts\" pdf",
+        "site:.europa.eu \"European Innovation Council and SMEs Executive Agency\" \"specific contract\" pdf"
+      ]
+    },
+    {
+      "entity_id": 33,
+      "acronym": "ELA",
+      "name": "European Labour Authority",
+      "cluster": "Other",
+      "country": "Slovakia",
+      "is_ec_dg": false,
+      "status": "checked_no_public_beacon_evidence",
+      "coverage_wave": 3,
+      "target_source_types": [
+        "annual_contracts",
+        "contracts_awarded",
+        "specific_contracts"
+      ],
+      "search_queries": [
+        "site:.europa.eu \"European Labour Authority\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"European Labour Authority\" \"BEACON\"",
+        "site:.europa.eu \"ELA\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"European Labour Authority\" \"annual list of contracts\" pdf",
+        "site:.europa.eu \"European Labour Authority\" \"specific contract\" pdf"
+      ]
+    },
+    {
+      "entity_id": 34,
+      "acronym": "EMA",
+      "name": "European Medicines Agency",
+      "cluster": "Other",
+      "country": "Netherlands",
+      "is_ec_dg": false,
+      "status": "checked_no_public_beacon_evidence",
+      "coverage_wave": 3,
+      "target_source_types": [
+        "annual_contracts",
+        "contracts_awarded",
+        "specific_contracts"
+      ],
+      "search_queries": [
+        "site:.europa.eu \"European Medicines Agency\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"European Medicines Agency\" \"BEACON\"",
+        "site:.europa.eu \"EMA\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"European Medicines Agency\" \"annual list of contracts\" pdf",
+        "site:.europa.eu \"European Medicines Agency\" \"specific contract\" pdf"
+      ]
+    },
+    {
+      "entity_id": 35,
+      "acronym": "ENISA",
+      "name": "EU Agency for Cybersecurity",
+      "cluster": "Other",
+      "country": "Greece",
+      "is_ec_dg": false,
+      "status": "checked_no_public_beacon_evidence",
+      "coverage_wave": 1,
+      "target_source_types": [
+        "annual_contracts",
+        "contracts_awarded",
+        "specific_contracts"
+      ],
+      "search_queries": [
+        "site:.europa.eu \"EU Agency for Cybersecurity\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"EU Agency for Cybersecurity\" \"BEACON\"",
+        "site:.europa.eu \"ENISA\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"EU Agency for Cybersecurity\" \"annual list of contracts\" pdf",
+        "site:.europa.eu \"EU Agency for Cybersecurity\" \"specific contract\" pdf"
+      ]
+    },
+    {
+      "entity_id": 36,
+      "acronym": "EUDA",
+      "name": "European Union Drugs Agency",
+      "cluster": "Other",
+      "country": "Portugal",
+      "is_ec_dg": false,
+      "status": "checked_no_public_beacon_evidence",
+      "coverage_wave": 3,
+      "target_source_types": [
+        "annual_contracts",
+        "contracts_awarded",
+        "specific_contracts"
+      ],
+      "search_queries": [
+        "site:.europa.eu \"European Union Drugs Agency\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"European Union Drugs Agency\" \"BEACON\"",
+        "site:.europa.eu \"EUDA\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"European Union Drugs Agency\" \"annual list of contracts\" pdf",
+        "site:.europa.eu \"European Union Drugs Agency\" \"specific contract\" pdf"
+      ]
+    },
+    {
+      "entity_id": 37,
+      "acronym": "EP",
+      "name": "European Parliament",
+      "cluster": "Other",
+      "country": "France",
+      "is_ec_dg": false,
+      "status": "covered",
+      "coverage_wave": 0,
+      "target_source_types": [
+        "annual_contracts",
+        "contracts_awarded",
+        "specific_contracts"
+      ],
+      "search_queries": [
+        "site:.europa.eu \"European Parliament\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"European Parliament\" \"BEACON\"",
+        "site:.europa.eu \"EP\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"European Parliament\" \"annual list of contracts\" pdf",
+        "site:.europa.eu \"European Parliament\" \"specific contract\" pdf"
+      ]
+    },
+    {
+      "entity_id": 38,
+      "acronym": "EPPO",
+      "name": "European Public Prosecutor's Office",
+      "cluster": "Luxembourg",
+      "country": "Luxembourg",
+      "is_ec_dg": false,
+      "status": "checked_no_public_beacon_evidence",
+      "coverage_wave": 2,
+      "target_source_types": [
+        "annual_contracts",
+        "contracts_awarded",
+        "specific_contracts"
+      ],
+      "search_queries": [
+        "site:.europa.eu \"European Public Prosecutor's Office\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"European Public Prosecutor's Office\" \"BEACON\"",
+        "site:.europa.eu \"EPPO\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"European Public Prosecutor's Office\" \"annual list of contracts\" pdf",
+        "site:.europa.eu \"European Public Prosecutor's Office\" \"specific contract\" pdf"
+      ]
+    },
+    {
+      "entity_id": 39,
+      "acronym": "ERA",
+      "name": "EU Agency for Railways",
+      "cluster": "Other",
+      "country": "France",
+      "is_ec_dg": false,
+      "status": "checked_no_public_beacon_evidence",
+      "coverage_wave": 3,
+      "target_source_types": [
+        "annual_contracts",
+        "contracts_awarded",
+        "specific_contracts"
+      ],
+      "search_queries": [
+        "site:.europa.eu \"EU Agency for Railways\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"EU Agency for Railways\" \"BEACON\"",
+        "site:.europa.eu \"ERA\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"EU Agency for Railways\" \"annual list of contracts\" pdf",
+        "site:.europa.eu \"EU Agency for Railways\" \"specific contract\" pdf"
+      ]
+    },
+    {
+      "entity_id": 40,
+      "acronym": "ERCEA",
+      "name": "European Research Council Executive Agency",
+      "cluster": "Brussels",
+      "country": "Belgium",
+      "is_ec_dg": false,
+      "status": "indirect_only",
+      "coverage_wave": 2,
+      "target_source_types": [
+        "programme_contract_pages",
+        "specific_contracts",
+        "annual_contracts"
+      ],
+      "search_queries": [
+        "site:.europa.eu \"European Research Council Executive Agency\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"European Research Council Executive Agency\" \"BEACON\"",
+        "site:.europa.eu \"ERCEA\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"European Research Council Executive Agency\" \"annual list of contracts\" pdf",
+        "site:.europa.eu \"European Research Council Executive Agency\" \"specific contract\" pdf"
+      ]
+    },
+    {
+      "entity_id": 41,
+      "acronym": "ESA",
+      "name": "Euratom Supply Agency",
+      "cluster": "Luxembourg",
+      "country": "Luxembourg",
+      "is_ec_dg": false,
+      "status": "follow_up_needed",
+      "coverage_wave": 2,
+      "target_source_types": [
+        "annual_contracts",
+        "contracts_awarded",
+        "specific_contracts"
+      ],
+      "search_queries": [
+        "site:.europa.eu \"Euratom Supply Agency\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"Euratom Supply Agency\" \"BEACON\"",
+        "site:.europa.eu \"ESA\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"Euratom Supply Agency\" \"annual list of contracts\" pdf",
+        "site:.europa.eu \"Euratom Supply Agency\" \"specific contract\" pdf"
+      ]
+    },
+    {
+      "entity_id": 42,
+      "acronym": "ESMA",
+      "name": "European Securities and Markets Authority",
+      "cluster": "Other",
+      "country": "France",
+      "is_ec_dg": false,
+      "status": "checked_no_public_beacon_evidence",
+      "coverage_wave": 3,
+      "target_source_types": [
+        "annual_contracts",
+        "contracts_awarded",
+        "specific_contracts"
+      ],
+      "search_queries": [
+        "site:.europa.eu \"European Securities and Markets Authority\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"European Securities and Markets Authority\" \"BEACON\"",
+        "site:.europa.eu \"ESMA\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"European Securities and Markets Authority\" \"annual list of contracts\" pdf",
+        "site:.europa.eu \"European Securities and Markets Authority\" \"specific contract\" pdf"
+      ]
+    },
+    {
+      "entity_id": 43,
+      "acronym": "ETF",
+      "name": "European Training Foundation",
+      "cluster": "Other",
+      "country": "Italy",
+      "is_ec_dg": false,
+      "status": "checked_no_public_beacon_evidence",
+      "coverage_wave": 3,
+      "target_source_types": [
+        "annual_contracts",
+        "contracts_awarded",
+        "specific_contracts"
+      ],
+      "search_queries": [
+        "site:.europa.eu \"European Training Foundation\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"European Training Foundation\" \"BEACON\"",
+        "site:.europa.eu \"ETF\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"European Training Foundation\" \"annual list of contracts\" pdf",
+        "site:.europa.eu \"European Training Foundation\" \"specific contract\" pdf"
+      ]
+    },
+    {
+      "entity_id": 44,
+      "acronym": "EUAA",
+      "name": "EU Agency for Asylum",
+      "cluster": "Other",
+      "country": "Malta",
+      "is_ec_dg": false,
+      "status": "indirect_only",
+      "coverage_wave": 3,
+      "target_source_types": [
+        "annual_contracts",
+        "contracts_awarded",
+        "specific_contracts"
+      ],
+      "search_queries": [
+        "site:.europa.eu \"EU Agency for Asylum\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"EU Agency for Asylum\" \"BEACON\"",
+        "site:.europa.eu \"EUAA\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"EU Agency for Asylum\" \"annual list of contracts\" pdf",
+        "site:.europa.eu \"EU Agency for Asylum\" \"specific contract\" pdf"
+      ]
+    },
+    {
+      "entity_id": 45,
+      "acronym": "EUI",
+      "name": "European University Institute",
+      "cluster": "Other",
+      "country": "Italy",
+      "is_ec_dg": false,
+      "status": "checked_no_public_beacon_evidence",
+      "coverage_wave": 3,
+      "target_source_types": [
+        "annual_contracts",
+        "contracts_awarded",
+        "specific_contracts"
+      ],
+      "search_queries": [
+        "site:.europa.eu \"European University Institute\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"European University Institute\" \"BEACON\"",
+        "site:.europa.eu \"EUI\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"European University Institute\" \"annual list of contracts\" pdf",
+        "site:.europa.eu \"European University Institute\" \"specific contract\" pdf"
+      ]
+    },
+    {
+      "entity_id": 46,
+      "acronym": "EUIPO",
+      "name": "EU Intellectual Property Office",
+      "cluster": "Other",
+      "country": "Spain",
+      "is_ec_dg": false,
+      "status": "checked_no_public_beacon_evidence",
+      "coverage_wave": 1,
+      "target_source_types": [
+        "annual_contracts",
+        "contracts_awarded",
+        "specific_contracts"
+      ],
+      "search_queries": [
+        "site:.europa.eu \"EU Intellectual Property Office\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"EU Intellectual Property Office\" \"BEACON\"",
+        "site:.europa.eu \"EUIPO\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"EU Intellectual Property Office\" \"annual list of contracts\" pdf",
+        "site:.europa.eu \"EU Intellectual Property Office\" \"specific contract\" pdf"
+      ]
+    },
+    {
+      "entity_id": 47,
+      "acronym": "EU_LISA",
+      "name": "EU Agency for Large-Scale IT Systems",
+      "cluster": "Other",
+      "country": "Estonia",
+      "is_ec_dg": false,
+      "status": "checked_no_public_beacon_evidence",
+      "coverage_wave": 3,
+      "target_source_types": [
+        "annual_contracts",
+        "contracts_awarded",
+        "specific_contracts"
+      ],
+      "search_queries": [
+        "site:.europa.eu \"EU Agency for Large-Scale IT Systems\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"EU Agency for Large-Scale IT Systems\" \"BEACON\"",
+        "site:.europa.eu \"EU_LISA\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"EU Agency for Large-Scale IT Systems\" \"annual list of contracts\" pdf",
+        "site:.europa.eu \"EU Agency for Large-Scale IT Systems\" \"specific contract\" pdf"
+      ]
+    },
+    {
+      "entity_id": 48,
+      "acronym": "EU_OSHA",
+      "name": "European Agency for Safety and Health at Work",
+      "cluster": "Other",
+      "country": "Spain",
+      "is_ec_dg": false,
+      "status": "checked_no_public_beacon_evidence",
+      "coverage_wave": 3,
+      "target_source_types": [
+        "annual_contracts",
+        "contracts_awarded",
+        "specific_contracts"
+      ],
+      "search_queries": [
+        "site:.europa.eu \"European Agency for Safety and Health at Work\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"European Agency for Safety and Health at Work\" \"BEACON\"",
+        "site:.europa.eu \"EU_OSHA\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"European Agency for Safety and Health at Work\" \"annual list of contracts\" pdf",
+        "site:.europa.eu \"European Agency for Safety and Health at Work\" \"specific contract\" pdf"
+      ]
+    },
+    {
+      "entity_id": 49,
+      "acronym": "EUROJUST",
+      "name": "EU Agency for Criminal Justice Cooperation",
+      "cluster": "The Hague",
+      "country": "Netherlands",
+      "is_ec_dg": false,
+      "status": "checked_no_public_beacon_evidence",
+      "coverage_wave": 3,
+      "target_source_types": [
+        "annual_contracts",
+        "contracts_awarded",
+        "specific_contracts"
+      ],
+      "search_queries": [
+        "site:.europa.eu \"EU Agency for Criminal Justice Cooperation\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"EU Agency for Criminal Justice Cooperation\" \"BEACON\"",
+        "site:.europa.eu \"EUROJUST\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"EU Agency for Criminal Justice Cooperation\" \"annual list of contracts\" pdf",
+        "site:.europa.eu \"EU Agency for Criminal Justice Cooperation\" \"specific contract\" pdf"
+      ]
+    },
+    {
+      "entity_id": 50,
+      "acronym": "EUROHPC",
+      "name": "European High-Performance Computing JU",
+      "cluster": "Luxembourg",
+      "country": "Luxembourg",
+      "is_ec_dg": false,
+      "status": "checked_no_public_beacon_evidence",
+      "coverage_wave": 2,
+      "target_source_types": [
+        "annual_contracts",
+        "contracts_awarded",
+        "specific_contracts"
+      ],
+      "search_queries": [
+        "site:.europa.eu \"European High-Performance Computing JU\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"European High-Performance Computing JU\" \"BEACON\"",
+        "site:.europa.eu \"EUROHPC\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"European High-Performance Computing JU\" \"annual list of contracts\" pdf",
+        "site:.europa.eu \"European High-Performance Computing JU\" \"specific contract\" pdf"
+      ]
+    },
+    {
+      "entity_id": 51,
+      "acronym": "EUROPOL",
+      "name": "EU Agency for Law Enforcement Cooperation",
+      "cluster": "The Hague",
+      "country": "Netherlands",
+      "is_ec_dg": false,
+      "status": "covered",
+      "coverage_wave": 0,
+      "target_source_types": [
+        "annual_contracts",
+        "contracts_awarded",
+        "specific_contracts"
+      ],
+      "search_queries": [
+        "site:.europa.eu \"EU Agency for Law Enforcement Cooperation\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"EU Agency for Law Enforcement Cooperation\" \"BEACON\"",
+        "site:.europa.eu \"EUROPOL\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"EU Agency for Law Enforcement Cooperation\" \"annual list of contracts\" pdf",
+        "site:.europa.eu \"EU Agency for Law Enforcement Cooperation\" \"specific contract\" pdf"
+      ]
+    },
+    {
+      "entity_id": 52,
+      "acronym": "EURSC",
+      "name": "Secretariat-General of European Schools",
+      "cluster": "Brussels",
+      "country": "Belgium",
+      "is_ec_dg": false,
+      "status": "checked_no_public_beacon_evidence",
+      "coverage_wave": 2,
+      "target_source_types": [
+        "annual_contracts",
+        "contracts_awarded",
+        "specific_contracts"
+      ],
+      "search_queries": [
+        "site:.europa.eu \"Secretariat-General of European Schools\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"Secretariat-General of European Schools\" \"BEACON\"",
+        "site:.europa.eu \"EURSC\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"Secretariat-General of European Schools\" \"annual list of contracts\" pdf",
+        "site:.europa.eu \"Secretariat-General of European Schools\" \"specific contract\" pdf"
+      ]
+    },
+    {
+      "entity_id": 53,
+      "acronym": "F4E",
+      "name": "Fusion for Energy Joint Undertaking",
+      "cluster": "Other",
+      "country": "Spain",
+      "is_ec_dg": false,
+      "status": "checked_no_public_beacon_evidence",
+      "coverage_wave": 2,
+      "target_source_types": [
+        "specific_contracts",
+        "annual_contracts",
+        "programme_contract_pages"
+      ],
+      "search_queries": [
+        "site:.europa.eu \"Fusion for Energy Joint Undertaking\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"Fusion for Energy Joint Undertaking\" \"BEACON\"",
+        "site:.europa.eu \"F4E\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"Fusion for Energy Joint Undertaking\" \"annual list of contracts\" pdf",
+        "site:.europa.eu \"Fusion for Energy Joint Undertaking\" \"specific contract\" pdf"
+      ]
+    },
+    {
+      "entity_id": 54,
+      "acronym": "FRA",
+      "name": "EU Agency for Fundamental Rights",
+      "cluster": "Other",
+      "country": "Austria",
+      "is_ec_dg": false,
+      "status": "checked_no_public_beacon_evidence",
+      "coverage_wave": 3,
+      "target_source_types": [
+        "annual_contracts",
+        "contracts_awarded",
+        "specific_contracts"
+      ],
+      "search_queries": [
+        "site:.europa.eu \"EU Agency for Fundamental Rights\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"EU Agency for Fundamental Rights\" \"BEACON\"",
+        "site:.europa.eu \"FRA\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"EU Agency for Fundamental Rights\" \"annual list of contracts\" pdf",
+        "site:.europa.eu \"EU Agency for Fundamental Rights\" \"specific contract\" pdf"
+      ]
+    },
+    {
+      "entity_id": 55,
+      "acronym": "FRONTEX",
+      "name": "European Border and Coast Guard Agency",
+      "cluster": "Other",
+      "country": "Poland",
+      "is_ec_dg": false,
+      "status": "checked_no_public_beacon_evidence",
+      "coverage_wave": 3,
+      "target_source_types": [
+        "annual_contracts",
+        "contracts_awarded",
+        "specific_contracts"
+      ],
+      "search_queries": [
+        "site:.europa.eu \"European Border and Coast Guard Agency\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"European Border and Coast Guard Agency\" \"BEACON\"",
+        "site:.europa.eu \"FRONTEX\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"European Border and Coast Guard Agency\" \"annual list of contracts\" pdf",
+        "site:.europa.eu \"European Border and Coast Guard Agency\" \"specific contract\" pdf"
+      ]
+    },
+    {
+      "entity_id": 56,
+      "acronym": "HADEA",
+      "name": "European Health and Digital Executive Agency",
+      "cluster": "Brussels",
+      "country": "Belgium",
+      "is_ec_dg": false,
+      "status": "covered",
+      "coverage_wave": 0,
+      "target_source_types": [
+        "programme_contract_pages",
+        "specific_contracts",
+        "annual_contracts"
+      ],
+      "search_queries": [
+        "site:.europa.eu \"European Health and Digital Executive Agency\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"European Health and Digital Executive Agency\" \"BEACON\"",
+        "site:.europa.eu \"HADEA\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"European Health and Digital Executive Agency\" \"annual list of contracts\" pdf",
+        "site:.europa.eu \"European Health and Digital Executive Agency\" \"specific contract\" pdf"
+      ]
+    },
+    {
+      "entity_id": 57,
+      "acronym": "IHI_JU",
+      "name": "Innovative Health Initiative Joint Undertaking",
+      "cluster": "Brussels",
+      "country": "Belgium",
+      "is_ec_dg": false,
+      "status": "checked_no_public_beacon_evidence",
+      "coverage_wave": 2,
+      "target_source_types": [
+        "specific_contracts",
+        "annual_contracts",
+        "programme_contract_pages"
+      ],
+      "search_queries": [
+        "site:.europa.eu \"Innovative Health Initiative Joint Undertaking\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"Innovative Health Initiative Joint Undertaking\" \"BEACON\"",
+        "site:.europa.eu \"IHI_JU\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"Innovative Health Initiative Joint Undertaking\" \"annual list of contracts\" pdf",
+        "site:.europa.eu \"Innovative Health Initiative Joint Undertaking\" \"specific contract\" pdf"
+      ]
+    },
+    {
+      "entity_id": 58,
+      "acronym": "REA",
+      "name": "European Research Executive Agency",
+      "cluster": "Brussels",
+      "country": "Belgium",
+      "is_ec_dg": false,
+      "status": "indirect_only",
+      "coverage_wave": 2,
+      "target_source_types": [
+        "programme_contract_pages",
+        "specific_contracts",
+        "annual_contracts"
+      ],
+      "search_queries": [
+        "site:.europa.eu \"European Research Executive Agency\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"European Research Executive Agency\" \"BEACON\"",
+        "site:.europa.eu \"REA\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"European Research Executive Agency\" \"annual list of contracts\" pdf",
+        "site:.europa.eu \"European Research Executive Agency\" \"specific contract\" pdf"
+      ]
+    },
+    {
+      "entity_id": 59,
+      "acronym": "SESAR",
+      "name": "Single European Sky ATM Research JU",
+      "cluster": "Brussels",
+      "country": "Belgium",
+      "is_ec_dg": false,
+      "status": "checked_no_public_beacon_evidence",
+      "coverage_wave": 2,
+      "target_source_types": [
+        "annual_contracts",
+        "contracts_awarded",
+        "specific_contracts"
+      ],
+      "search_queries": [
+        "site:.europa.eu \"Single European Sky ATM Research JU\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"Single European Sky ATM Research JU\" \"BEACON\"",
+        "site:.europa.eu \"SESAR\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"Single European Sky ATM Research JU\" \"annual list of contracts\" pdf",
+        "site:.europa.eu \"Single European Sky ATM Research JU\" \"specific contract\" pdf"
+      ]
+    },
+    {
+      "entity_id": 60,
+      "acronym": "SNS_JU",
+      "name": "Smart Networks and Services Joint Undertaking",
+      "cluster": "Brussels",
+      "country": "Belgium",
+      "is_ec_dg": false,
+      "status": "checked_no_public_beacon_evidence",
+      "coverage_wave": 2,
+      "target_source_types": [
+        "specific_contracts",
+        "annual_contracts",
+        "programme_contract_pages"
+      ],
+      "search_queries": [
+        "site:.europa.eu \"Smart Networks and Services Joint Undertaking\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"Smart Networks and Services Joint Undertaking\" \"BEACON\"",
+        "site:.europa.eu \"SNS_JU\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"Smart Networks and Services Joint Undertaking\" \"annual list of contracts\" pdf",
+        "site:.europa.eu \"Smart Networks and Services Joint Undertaking\" \"specific contract\" pdf"
+      ]
+    },
+    {
+      "entity_id": 61,
+      "acronym": "DG_AGRI",
+      "name": "Agriculture and Rural Development",
+      "cluster": "Brussels",
+      "country": "Belgium",
+      "is_ec_dg": true,
+      "status": "follow_up_needed",
+      "coverage_wave": 1,
+      "target_source_types": [
+        "specific_contracts",
+        "annual_contracts",
+        "programme_contract_pages"
+      ],
+      "search_queries": [
+        "site:.europa.eu \"Agriculture and Rural Development\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"Agriculture and Rural Development\" \"BEACON\"",
+        "site:.europa.eu \"DG_AGRI\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"Agriculture and Rural Development\" \"annual list of contracts\" pdf",
+        "site:.europa.eu \"Agriculture and Rural Development\" \"specific contract\" pdf"
+      ]
+    },
+    {
+      "entity_id": 62,
+      "acronym": "DG_BUDG",
+      "name": "Budget",
+      "cluster": "Brussels",
+      "country": "Belgium",
+      "is_ec_dg": true,
+      "status": "follow_up_needed",
+      "coverage_wave": 1,
+      "target_source_types": [
+        "specific_contracts",
+        "annual_contracts",
+        "programme_contract_pages"
+      ],
+      "search_queries": [
+        "site:.europa.eu \"Budget\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"Budget\" \"BEACON\"",
+        "site:.europa.eu \"DG_BUDG\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"Budget\" \"annual list of contracts\" pdf",
+        "site:.europa.eu \"Budget\" \"specific contract\" pdf"
+      ]
+    },
+    {
+      "entity_id": 63,
+      "acronym": "DG_CLIMA",
+      "name": "Climate Action",
+      "cluster": "Brussels",
+      "country": "Belgium",
+      "is_ec_dg": true,
+      "status": "follow_up_needed",
+      "coverage_wave": 1,
+      "target_source_types": [
+        "specific_contracts",
+        "annual_contracts",
+        "programme_contract_pages"
+      ],
+      "search_queries": [
+        "site:.europa.eu \"Climate Action\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"Climate Action\" \"BEACON\"",
+        "site:.europa.eu \"DG_CLIMA\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"Climate Action\" \"annual list of contracts\" pdf",
+        "site:.europa.eu \"Climate Action\" \"specific contract\" pdf"
+      ]
+    },
+    {
+      "entity_id": 64,
+      "acronym": "DG_COMP",
+      "name": "Competition",
+      "cluster": "Brussels",
+      "country": "Belgium",
+      "is_ec_dg": true,
+      "status": "follow_up_needed",
+      "coverage_wave": 1,
+      "target_source_types": [
+        "specific_contracts",
+        "annual_contracts",
+        "programme_contract_pages"
+      ],
+      "search_queries": [
+        "site:.europa.eu \"Competition\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"Competition\" \"BEACON\"",
+        "site:.europa.eu \"DG_COMP\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"Competition\" \"annual list of contracts\" pdf",
+        "site:.europa.eu \"Competition\" \"specific contract\" pdf"
+      ]
+    },
+    {
+      "entity_id": 65,
+      "acronym": "DG_CONNECT",
+      "name": "Communications Networks Content and Technology",
+      "cluster": "Brussels",
+      "country": "Belgium",
+      "is_ec_dg": true,
+      "status": "follow_up_needed",
+      "coverage_wave": 1,
+      "target_source_types": [
+        "specific_contracts",
+        "annual_contracts",
+        "programme_contract_pages"
+      ],
+      "search_queries": [
+        "site:.europa.eu \"Communications Networks Content and Technology\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"Communications Networks Content and Technology\" \"BEACON\"",
+        "site:.europa.eu \"DG_CONNECT\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"Communications Networks Content and Technology\" \"annual list of contracts\" pdf",
+        "site:.europa.eu \"Communications Networks Content and Technology\" \"specific contract\" pdf"
+      ]
+    },
+    {
+      "entity_id": 66,
+      "acronym": "DG_DEFIS",
+      "name": "Defence Industry and Space",
+      "cluster": "Brussels",
+      "country": "Belgium",
+      "is_ec_dg": true,
+      "status": "follow_up_needed",
+      "coverage_wave": 1,
+      "target_source_types": [
+        "specific_contracts",
+        "annual_contracts",
+        "programme_contract_pages"
+      ],
+      "search_queries": [
+        "site:.europa.eu \"Defence Industry and Space\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"Defence Industry and Space\" \"BEACON\"",
+        "site:.europa.eu \"DG_DEFIS\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"Defence Industry and Space\" \"annual list of contracts\" pdf",
+        "site:.europa.eu \"Defence Industry and Space\" \"specific contract\" pdf"
+      ]
+    },
+    {
+      "entity_id": 67,
+      "acronym": "DG_EAC",
+      "name": "Education and Culture",
+      "cluster": "Brussels",
+      "country": "Belgium",
+      "is_ec_dg": true,
+      "status": "follow_up_needed",
+      "coverage_wave": 1,
+      "target_source_types": [
+        "specific_contracts",
+        "annual_contracts",
+        "programme_contract_pages"
+      ],
+      "search_queries": [
+        "site:.europa.eu \"Education and Culture\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"Education and Culture\" \"BEACON\"",
+        "site:.europa.eu \"DG_EAC\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"Education and Culture\" \"annual list of contracts\" pdf",
+        "site:.europa.eu \"Education and Culture\" \"specific contract\" pdf"
+      ]
+    },
+    {
+      "entity_id": 68,
+      "acronym": "DG_ECFIN",
+      "name": "Economic and Financial Affairs",
+      "cluster": "Brussels",
+      "country": "Belgium",
+      "is_ec_dg": true,
+      "status": "follow_up_needed",
+      "coverage_wave": 1,
+      "target_source_types": [
+        "specific_contracts",
+        "annual_contracts",
+        "programme_contract_pages"
+      ],
+      "search_queries": [
+        "site:.europa.eu \"Economic and Financial Affairs\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"Economic and Financial Affairs\" \"BEACON\"",
+        "site:.europa.eu \"DG_ECFIN\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"Economic and Financial Affairs\" \"annual list of contracts\" pdf",
+        "site:.europa.eu \"Economic and Financial Affairs\" \"specific contract\" pdf"
+      ]
+    },
+    {
+      "entity_id": 69,
+      "acronym": "DG_EMPL",
+      "name": "Employment Social Affairs and Inclusion",
+      "cluster": "Brussels",
+      "country": "Belgium",
+      "is_ec_dg": true,
+      "status": "follow_up_needed",
+      "coverage_wave": 1,
+      "target_source_types": [
+        "specific_contracts",
+        "annual_contracts",
+        "programme_contract_pages"
+      ],
+      "search_queries": [
+        "site:.europa.eu \"Employment Social Affairs and Inclusion\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"Employment Social Affairs and Inclusion\" \"BEACON\"",
+        "site:.europa.eu \"DG_EMPL\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"Employment Social Affairs and Inclusion\" \"annual list of contracts\" pdf",
+        "site:.europa.eu \"Employment Social Affairs and Inclusion\" \"specific contract\" pdf"
+      ]
+    },
+    {
+      "entity_id": 70,
+      "acronym": "DG_ENER",
+      "name": "Energy",
+      "cluster": "Brussels",
+      "country": "Belgium",
+      "is_ec_dg": true,
+      "status": "follow_up_needed",
+      "coverage_wave": 1,
+      "target_source_types": [
+        "specific_contracts",
+        "annual_contracts",
+        "programme_contract_pages"
+      ],
+      "search_queries": [
+        "site:.europa.eu \"Energy\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"Energy\" \"BEACON\"",
+        "site:.europa.eu \"DG_ENER\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"Energy\" \"annual list of contracts\" pdf",
+        "site:.europa.eu \"Energy\" \"specific contract\" pdf"
+      ]
+    },
+    {
+      "entity_id": 71,
+      "acronym": "DG_ENV",
+      "name": "Environment",
+      "cluster": "Brussels",
+      "country": "Belgium",
+      "is_ec_dg": true,
+      "status": "follow_up_needed",
+      "coverage_wave": 1,
+      "target_source_types": [
+        "specific_contracts",
+        "annual_contracts",
+        "programme_contract_pages"
+      ],
+      "search_queries": [
+        "site:.europa.eu \"Environment\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"Environment\" \"BEACON\"",
+        "site:.europa.eu \"DG_ENV\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"Environment\" \"annual list of contracts\" pdf",
+        "site:.europa.eu \"Environment\" \"specific contract\" pdf"
+      ]
+    },
+    {
+      "entity_id": 72,
+      "acronym": "DG_FISMA",
+      "name": "Financial Stability and Capital Markets Union",
+      "cluster": "Brussels",
+      "country": "Belgium",
+      "is_ec_dg": true,
+      "status": "follow_up_needed",
+      "coverage_wave": 1,
+      "target_source_types": [
+        "specific_contracts",
+        "annual_contracts",
+        "programme_contract_pages"
+      ],
+      "search_queries": [
+        "site:.europa.eu \"Financial Stability and Capital Markets Union\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"Financial Stability and Capital Markets Union\" \"BEACON\"",
+        "site:.europa.eu \"DG_FISMA\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"Financial Stability and Capital Markets Union\" \"annual list of contracts\" pdf",
+        "site:.europa.eu \"Financial Stability and Capital Markets Union\" \"specific contract\" pdf"
+      ]
+    },
+    {
+      "entity_id": 73,
+      "acronym": "DG_GROW",
+      "name": "Internal Market Industry Entrepreneurship and SMEs",
+      "cluster": "Brussels",
+      "country": "Belgium",
+      "is_ec_dg": true,
+      "status": "follow_up_needed",
+      "coverage_wave": 1,
+      "target_source_types": [
+        "specific_contracts",
+        "annual_contracts",
+        "programme_contract_pages"
+      ],
+      "search_queries": [
+        "site:.europa.eu \"Internal Market Industry Entrepreneurship and SMEs\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"Internal Market Industry Entrepreneurship and SMEs\" \"BEACON\"",
+        "site:.europa.eu \"DG_GROW\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"Internal Market Industry Entrepreneurship and SMEs\" \"annual list of contracts\" pdf",
+        "site:.europa.eu \"Internal Market Industry Entrepreneurship and SMEs\" \"specific contract\" pdf"
+      ]
+    },
+    {
+      "entity_id": 74,
+      "acronym": "DG_HOME",
+      "name": "Migration and Home Affairs",
+      "cluster": "Brussels",
+      "country": "Belgium",
+      "is_ec_dg": true,
+      "status": "follow_up_needed",
+      "coverage_wave": 1,
+      "target_source_types": [
+        "specific_contracts",
+        "annual_contracts",
+        "programme_contract_pages"
+      ],
+      "search_queries": [
+        "site:.europa.eu \"Migration and Home Affairs\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"Migration and Home Affairs\" \"BEACON\"",
+        "site:.europa.eu \"DG_HOME\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"Migration and Home Affairs\" \"annual list of contracts\" pdf",
+        "site:.europa.eu \"Migration and Home Affairs\" \"specific contract\" pdf"
+      ]
+    },
+    {
+      "entity_id": 75,
+      "acronym": "DG_JUST",
+      "name": "Justice and Consumers",
+      "cluster": "Brussels",
+      "country": "Belgium",
+      "is_ec_dg": true,
+      "status": "follow_up_needed",
+      "coverage_wave": 1,
+      "target_source_types": [
+        "specific_contracts",
+        "annual_contracts",
+        "programme_contract_pages"
+      ],
+      "search_queries": [
+        "site:.europa.eu \"Justice and Consumers\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"Justice and Consumers\" \"BEACON\"",
+        "site:.europa.eu \"DG_JUST\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"Justice and Consumers\" \"annual list of contracts\" pdf",
+        "site:.europa.eu \"Justice and Consumers\" \"specific contract\" pdf"
+      ]
+    },
+    {
+      "entity_id": 76,
+      "acronym": "DG_MARE",
+      "name": "Maritime Affairs and Fisheries",
+      "cluster": "Brussels",
+      "country": "Belgium",
+      "is_ec_dg": true,
+      "status": "follow_up_needed",
+      "coverage_wave": 1,
+      "target_source_types": [
+        "specific_contracts",
+        "annual_contracts",
+        "programme_contract_pages"
+      ],
+      "search_queries": [
+        "site:.europa.eu \"Maritime Affairs and Fisheries\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"Maritime Affairs and Fisheries\" \"BEACON\"",
+        "site:.europa.eu \"DG_MARE\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"Maritime Affairs and Fisheries\" \"annual list of contracts\" pdf",
+        "site:.europa.eu \"Maritime Affairs and Fisheries\" \"specific contract\" pdf"
+      ]
+    },
+    {
+      "entity_id": 77,
+      "acronym": "DG_MOVE",
+      "name": "Mobility and Transport",
+      "cluster": "Brussels",
+      "country": "Belgium",
+      "is_ec_dg": true,
+      "status": "follow_up_needed",
+      "coverage_wave": 1,
+      "target_source_types": [
+        "specific_contracts",
+        "annual_contracts",
+        "programme_contract_pages"
+      ],
+      "search_queries": [
+        "site:.europa.eu \"Mobility and Transport\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"Mobility and Transport\" \"BEACON\"",
+        "site:.europa.eu \"DG_MOVE\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"Mobility and Transport\" \"annual list of contracts\" pdf",
+        "site:.europa.eu \"Mobility and Transport\" \"specific contract\" pdf"
+      ]
+    },
+    {
+      "entity_id": 78,
+      "acronym": "DG_REFORM",
+      "name": "Structural Reform Support",
+      "cluster": "Brussels",
+      "country": "Belgium",
+      "is_ec_dg": true,
+      "status": "follow_up_needed",
+      "coverage_wave": 1,
+      "target_source_types": [
+        "specific_contracts",
+        "annual_contracts",
+        "programme_contract_pages"
+      ],
+      "search_queries": [
+        "site:.europa.eu \"Structural Reform Support\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"Structural Reform Support\" \"BEACON\"",
+        "site:.europa.eu \"DG_REFORM\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"Structural Reform Support\" \"annual list of contracts\" pdf",
+        "site:.europa.eu \"Structural Reform Support\" \"specific contract\" pdf"
+      ]
+    },
+    {
+      "entity_id": 79,
+      "acronym": "DG_REGIO",
+      "name": "Regional and Urban Policy",
+      "cluster": "Brussels",
+      "country": "Belgium",
+      "is_ec_dg": true,
+      "status": "follow_up_needed",
+      "coverage_wave": 1,
+      "target_source_types": [
+        "specific_contracts",
+        "annual_contracts",
+        "programme_contract_pages"
+      ],
+      "search_queries": [
+        "site:.europa.eu \"Regional and Urban Policy\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"Regional and Urban Policy\" \"BEACON\"",
+        "site:.europa.eu \"DG_REGIO\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"Regional and Urban Policy\" \"annual list of contracts\" pdf",
+        "site:.europa.eu \"Regional and Urban Policy\" \"specific contract\" pdf"
+      ]
+    },
+    {
+      "entity_id": 80,
+      "acronym": "DG_RTD",
+      "name": "Research and Innovation",
+      "cluster": "Brussels",
+      "country": "Belgium",
+      "is_ec_dg": true,
+      "status": "follow_up_needed",
+      "coverage_wave": 1,
+      "target_source_types": [
+        "specific_contracts",
+        "annual_contracts",
+        "programme_contract_pages"
+      ],
+      "search_queries": [
+        "site:.europa.eu \"Research and Innovation\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"Research and Innovation\" \"BEACON\"",
+        "site:.europa.eu \"DG_RTD\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"Research and Innovation\" \"annual list of contracts\" pdf",
+        "site:.europa.eu \"Research and Innovation\" \"specific contract\" pdf"
+      ]
+    },
+    {
+      "entity_id": 81,
+      "acronym": "DG_SANTE",
+      "name": "Health and Food Safety",
+      "cluster": "Brussels",
+      "country": "Belgium",
+      "is_ec_dg": true,
+      "status": "follow_up_needed",
+      "coverage_wave": 1,
+      "target_source_types": [
+        "specific_contracts",
+        "annual_contracts",
+        "programme_contract_pages"
+      ],
+      "search_queries": [
+        "site:.europa.eu \"Health and Food Safety\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"Health and Food Safety\" \"BEACON\"",
+        "site:.europa.eu \"DG_SANTE\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"Health and Food Safety\" \"annual list of contracts\" pdf",
+        "site:.europa.eu \"Health and Food Safety\" \"specific contract\" pdf"
+      ]
+    },
+    {
+      "entity_id": 82,
+      "acronym": "DG_TAXUD",
+      "name": "Taxation and Customs Union",
+      "cluster": "Brussels",
+      "country": "Belgium",
+      "is_ec_dg": true,
+      "status": "follow_up_needed",
+      "coverage_wave": 1,
+      "target_source_types": [
+        "specific_contracts",
+        "annual_contracts",
+        "programme_contract_pages"
+      ],
+      "search_queries": [
+        "site:.europa.eu \"Taxation and Customs Union\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"Taxation and Customs Union\" \"BEACON\"",
+        "site:.europa.eu \"DG_TAXUD\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"Taxation and Customs Union\" \"annual list of contracts\" pdf",
+        "site:.europa.eu \"Taxation and Customs Union\" \"specific contract\" pdf"
+      ]
+    },
+    {
+      "entity_id": 83,
+      "acronym": "DG_TRADE",
+      "name": "Trade",
+      "cluster": "Brussels",
+      "country": "Belgium",
+      "is_ec_dg": true,
+      "status": "follow_up_needed",
+      "coverage_wave": 1,
+      "target_source_types": [
+        "specific_contracts",
+        "annual_contracts",
+        "programme_contract_pages"
+      ],
+      "search_queries": [
+        "site:.europa.eu \"Trade\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"Trade\" \"BEACON\"",
+        "site:.europa.eu \"DG_TRADE\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"Trade\" \"annual list of contracts\" pdf",
+        "site:.europa.eu \"Trade\" \"specific contract\" pdf"
+      ]
+    },
+    {
+      "entity_id": 84,
+      "acronym": "DG_ECHO",
+      "name": "Civil Protection and Humanitarian Aid",
+      "cluster": "Brussels",
+      "country": "Belgium",
+      "is_ec_dg": true,
+      "status": "follow_up_needed",
+      "coverage_wave": 1,
+      "target_source_types": [
+        "specific_contracts",
+        "annual_contracts",
+        "programme_contract_pages"
+      ],
+      "search_queries": [
+        "site:.europa.eu \"Civil Protection and Humanitarian Aid\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"Civil Protection and Humanitarian Aid\" \"BEACON\"",
+        "site:.europa.eu \"DG_ECHO\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"Civil Protection and Humanitarian Aid\" \"annual list of contracts\" pdf",
+        "site:.europa.eu \"Civil Protection and Humanitarian Aid\" \"specific contract\" pdf"
+      ]
+    },
+    {
+      "entity_id": 85,
+      "acronym": "DG_INTPA",
+      "name": "International Partnerships",
+      "cluster": "Brussels",
+      "country": "Belgium",
+      "is_ec_dg": true,
+      "status": "follow_up_needed",
+      "coverage_wave": 1,
+      "target_source_types": [
+        "specific_contracts",
+        "annual_contracts",
+        "programme_contract_pages"
+      ],
+      "search_queries": [
+        "site:.europa.eu \"International Partnerships\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"International Partnerships\" \"BEACON\"",
+        "site:.europa.eu \"DG_INTPA\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"International Partnerships\" \"annual list of contracts\" pdf",
+        "site:.europa.eu \"International Partnerships\" \"specific contract\" pdf"
+      ]
+    },
+    {
+      "entity_id": 86,
+      "acronym": "DG_NEAR",
+      "name": "Neighbourhood and Enlargement",
+      "cluster": "Brussels",
+      "country": "Belgium",
+      "is_ec_dg": true,
+      "status": "follow_up_needed",
+      "coverage_wave": 1,
+      "target_source_types": [
+        "specific_contracts",
+        "annual_contracts",
+        "programme_contract_pages"
+      ],
+      "search_queries": [
+        "site:.europa.eu \"Neighbourhood and Enlargement\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"Neighbourhood and Enlargement\" \"BEACON\"",
+        "site:.europa.eu \"DG_NEAR\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"Neighbourhood and Enlargement\" \"annual list of contracts\" pdf",
+        "site:.europa.eu \"Neighbourhood and Enlargement\" \"specific contract\" pdf"
+      ]
+    },
+    {
+      "entity_id": 87,
+      "acronym": "DG_COMM",
+      "name": "Communication",
+      "cluster": "Brussels",
+      "country": "Belgium",
+      "is_ec_dg": true,
+      "status": "follow_up_needed",
+      "coverage_wave": 1,
+      "target_source_types": [
+        "specific_contracts",
+        "annual_contracts",
+        "programme_contract_pages"
+      ],
+      "search_queries": [
+        "site:.europa.eu \"Communication\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"Communication\" \"BEACON\"",
+        "site:.europa.eu \"DG_COMM\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"Communication\" \"annual list of contracts\" pdf",
+        "site:.europa.eu \"Communication\" \"specific contract\" pdf"
+      ]
+    },
+    {
+      "entity_id": 88,
+      "acronym": "DG_DIGIT",
+      "name": "Digital Services",
+      "cluster": "Brussels",
+      "country": "Belgium",
+      "is_ec_dg": true,
+      "status": "follow_up_needed",
+      "coverage_wave": 1,
+      "target_source_types": [
+        "specific_contracts",
+        "annual_contracts",
+        "programme_contract_pages"
+      ],
+      "search_queries": [
+        "site:.europa.eu \"Digital Services\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"Digital Services\" \"BEACON\"",
+        "site:.europa.eu \"DG_DIGIT\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"Digital Services\" \"annual list of contracts\" pdf",
+        "site:.europa.eu \"Digital Services\" \"specific contract\" pdf"
+      ]
+    },
+    {
+      "entity_id": 89,
+      "acronym": "DG_ESTAT",
+      "name": "Eurostat",
+      "cluster": "Brussels",
+      "country": "Belgium",
+      "is_ec_dg": true,
+      "status": "follow_up_needed",
+      "coverage_wave": 1,
+      "target_source_types": [
+        "specific_contracts",
+        "annual_contracts",
+        "programme_contract_pages"
+      ],
+      "search_queries": [
+        "site:.europa.eu \"Eurostat\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"Eurostat\" \"BEACON\"",
+        "site:.europa.eu \"DG_ESTAT\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"Eurostat\" \"annual list of contracts\" pdf",
+        "site:.europa.eu \"Eurostat\" \"specific contract\" pdf"
+      ]
+    },
+    {
+      "entity_id": 90,
+      "acronym": "DG_JRC",
+      "name": "Joint Research Centre",
+      "cluster": "Brussels",
+      "country": "Belgium",
+      "is_ec_dg": true,
+      "status": "follow_up_needed",
+      "coverage_wave": 1,
+      "target_source_types": [
+        "specific_contracts",
+        "annual_contracts",
+        "programme_contract_pages"
+      ],
+      "search_queries": [
+        "site:.europa.eu \"Joint Research Centre\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"Joint Research Centre\" \"BEACON\"",
+        "site:.europa.eu \"DG_JRC\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"Joint Research Centre\" \"annual list of contracts\" pdf",
+        "site:.europa.eu \"Joint Research Centre\" \"specific contract\" pdf"
+      ]
+    },
+    {
+      "entity_id": 91,
+      "acronym": "OLAF",
+      "name": "European Anti-Fraud Office",
+      "cluster": "Brussels",
+      "country": "Belgium",
+      "is_ec_dg": true,
+      "status": "follow_up_needed",
+      "coverage_wave": 1,
+      "target_source_types": [
+        "specific_contracts",
+        "annual_contracts",
+        "programme_contract_pages"
+      ],
+      "search_queries": [
+        "site:.europa.eu \"European Anti-Fraud Office\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"European Anti-Fraud Office\" \"BEACON\"",
+        "site:.europa.eu \"OLAF\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"European Anti-Fraud Office\" \"annual list of contracts\" pdf",
+        "site:.europa.eu \"European Anti-Fraud Office\" \"specific contract\" pdf"
+      ]
+    },
+    {
+      "entity_id": 92,
+      "acronym": "SG",
+      "name": "Secretariat-General",
+      "cluster": "Brussels",
+      "country": "Belgium",
+      "is_ec_dg": true,
+      "status": "follow_up_needed",
+      "coverage_wave": 1,
+      "target_source_types": [
+        "specific_contracts",
+        "annual_contracts",
+        "programme_contract_pages"
+      ],
+      "search_queries": [
+        "site:.europa.eu \"Secretariat-General\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"Secretariat-General\" \"BEACON\"",
+        "site:.europa.eu \"SG\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"Secretariat-General\" \"annual list of contracts\" pdf",
+        "site:.europa.eu \"Secretariat-General\" \"specific contract\" pdf"
+      ]
+    },
+    {
+      "entity_id": 93,
+      "acronym": "SJ",
+      "name": "Legal Service",
+      "cluster": "Brussels",
+      "country": "Belgium",
+      "is_ec_dg": true,
+      "status": "follow_up_needed",
+      "coverage_wave": 1,
+      "target_source_types": [
+        "specific_contracts",
+        "annual_contracts",
+        "programme_contract_pages"
+      ],
+      "search_queries": [
+        "site:.europa.eu \"Legal Service\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"Legal Service\" \"BEACON\"",
+        "site:.europa.eu \"SJ\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"Legal Service\" \"annual list of contracts\" pdf",
+        "site:.europa.eu \"Legal Service\" \"specific contract\" pdf"
+      ]
+    },
+    {
+      "entity_id": 94,
+      "acronym": "SFPI",
+      "name": "Service for Foreign Policy Instruments",
+      "cluster": "Brussels",
+      "country": "Belgium",
+      "is_ec_dg": true,
+      "status": "follow_up_needed",
+      "coverage_wave": 1,
+      "target_source_types": [
+        "specific_contracts",
+        "annual_contracts",
+        "programme_contract_pages"
+      ],
+      "search_queries": [
+        "site:.europa.eu \"Service for Foreign Policy Instruments\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"Service for Foreign Policy Instruments\" \"BEACON\"",
+        "site:.europa.eu \"SFPI\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"Service for Foreign Policy Instruments\" \"annual list of contracts\" pdf",
+        "site:.europa.eu \"Service for Foreign Policy Instruments\" \"specific contract\" pdf"
+      ]
+    },
+    {
+      "entity_id": 95,
+      "acronym": "DG_SCIC",
+      "name": "Interpretation",
+      "cluster": "Brussels",
+      "country": "Belgium",
+      "is_ec_dg": true,
+      "status": "follow_up_needed",
+      "coverage_wave": 1,
+      "target_source_types": [
+        "specific_contracts",
+        "annual_contracts",
+        "programme_contract_pages"
+      ],
+      "search_queries": [
+        "site:.europa.eu \"Interpretation\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"Interpretation\" \"BEACON\"",
+        "site:.europa.eu \"DG_SCIC\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"Interpretation\" \"annual list of contracts\" pdf",
+        "site:.europa.eu \"Interpretation\" \"specific contract\" pdf"
+      ]
+    },
+    {
+      "entity_id": 96,
+      "acronym": "DG_DGT",
+      "name": "Translation",
+      "cluster": "Brussels",
+      "country": "Belgium",
+      "is_ec_dg": true,
+      "status": "follow_up_needed",
+      "coverage_wave": 1,
+      "target_source_types": [
+        "specific_contracts",
+        "annual_contracts",
+        "programme_contract_pages"
+      ],
+      "search_queries": [
+        "site:.europa.eu \"Translation\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"Translation\" \"BEACON\"",
+        "site:.europa.eu \"DG_DGT\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"Translation\" \"annual list of contracts\" pdf",
+        "site:.europa.eu \"Translation\" \"specific contract\" pdf"
+      ]
+    },
+    {
+      "entity_id": 97,
+      "acronym": "DG_HR",
+      "name": "Human Resources and Security",
+      "cluster": "Brussels",
+      "country": "Belgium",
+      "is_ec_dg": true,
+      "status": "follow_up_needed",
+      "coverage_wave": 1,
+      "target_source_types": [
+        "specific_contracts",
+        "annual_contracts",
+        "programme_contract_pages"
+      ],
+      "search_queries": [
+        "site:.europa.eu \"Human Resources and Security\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"Human Resources and Security\" \"BEACON\"",
+        "site:.europa.eu \"DG_HR\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"Human Resources and Security\" \"annual list of contracts\" pdf",
+        "site:.europa.eu \"Human Resources and Security\" \"specific contract\" pdf"
+      ]
+    },
+    {
+      "entity_id": 98,
+      "acronym": "OIB",
+      "name": "Office for Infrastructure Brussels",
+      "cluster": "Brussels",
+      "country": "Belgium",
+      "is_ec_dg": true,
+      "status": "follow_up_needed",
+      "coverage_wave": 1,
+      "target_source_types": [
+        "specific_contracts",
+        "annual_contracts",
+        "programme_contract_pages"
+      ],
+      "search_queries": [
+        "site:.europa.eu \"Office for Infrastructure Brussels\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"Office for Infrastructure Brussels\" \"BEACON\"",
+        "site:.europa.eu \"OIB\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"Office for Infrastructure Brussels\" \"annual list of contracts\" pdf",
+        "site:.europa.eu \"Office for Infrastructure Brussels\" \"specific contract\" pdf"
+      ]
+    },
+    {
+      "entity_id": 99,
+      "acronym": "OIL",
+      "name": "Office for Infrastructure Luxembourg",
+      "cluster": "Brussels",
+      "country": "Belgium",
+      "is_ec_dg": true,
+      "status": "follow_up_needed",
+      "coverage_wave": 1,
+      "target_source_types": [
+        "specific_contracts",
+        "annual_contracts",
+        "programme_contract_pages"
+      ],
+      "search_queries": [
+        "site:.europa.eu \"Office for Infrastructure Luxembourg\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"Office for Infrastructure Luxembourg\" \"BEACON\"",
+        "site:.europa.eu \"OIL\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"Office for Infrastructure Luxembourg\" \"annual list of contracts\" pdf",
+        "site:.europa.eu \"Office for Infrastructure Luxembourg\" \"specific contract\" pdf"
+      ]
+    },
+    {
+      "entity_id": 100,
+      "acronym": "PMO",
+      "name": "Office for Administration and Payment",
+      "cluster": "Brussels",
+      "country": "Belgium",
+      "is_ec_dg": true,
+      "status": "follow_up_needed",
+      "coverage_wave": 1,
+      "target_source_types": [
+        "specific_contracts",
+        "annual_contracts",
+        "programme_contract_pages"
+      ],
+      "search_queries": [
+        "site:.europa.eu \"Office for Administration and Payment\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"Office for Administration and Payment\" \"BEACON\"",
+        "site:.europa.eu \"PMO\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"Office for Administration and Payment\" \"annual list of contracts\" pdf",
+        "site:.europa.eu \"Office for Administration and Payment\" \"specific contract\" pdf"
+      ]
+    },
+    {
+      "entity_id": 101,
+      "acronym": "EPSO_EC",
+      "name": "European Personnel Selection Office",
+      "cluster": "Brussels",
+      "country": "Belgium",
+      "is_ec_dg": true,
+      "status": "follow_up_needed",
+      "coverage_wave": 1,
+      "target_source_types": [
+        "specific_contracts",
+        "annual_contracts",
+        "programme_contract_pages"
+      ],
+      "search_queries": [
+        "site:.europa.eu \"European Personnel Selection Office\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"European Personnel Selection Office\" \"BEACON\"",
+        "site:.europa.eu \"EPSO_EC\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"European Personnel Selection Office\" \"annual list of contracts\" pdf",
+        "site:.europa.eu \"European Personnel Selection Office\" \"specific contract\" pdf"
+      ]
+    },
+    {
+      "entity_id": 102,
+      "acronym": "OP",
+      "name": "Publications Office",
+      "cluster": "Brussels",
+      "country": "Belgium",
+      "is_ec_dg": true,
+      "status": "follow_up_needed",
+      "coverage_wave": 1,
+      "target_source_types": [
+        "specific_contracts",
+        "annual_contracts",
+        "programme_contract_pages"
+      ],
+      "search_queries": [
+        "site:.europa.eu \"Publications Office\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"Publications Office\" \"BEACON\"",
+        "site:.europa.eu \"OP\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"Publications Office\" \"annual list of contracts\" pdf",
+        "site:.europa.eu \"Publications Office\" \"specific contract\" pdf"
+      ]
+    },
+    {
+      "entity_id": 103,
+      "acronym": "IAS",
+      "name": "Internal Audit Service",
+      "cluster": "Brussels",
+      "country": "Belgium",
+      "is_ec_dg": true,
+      "status": "follow_up_needed",
+      "coverage_wave": 1,
+      "target_source_types": [
+        "specific_contracts",
+        "annual_contracts",
+        "programme_contract_pages"
+      ],
+      "search_queries": [
+        "site:.europa.eu \"Internal Audit Service\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"Internal Audit Service\" \"BEACON\"",
+        "site:.europa.eu \"IAS\" \"DIGIT/2020/OP/0005\"",
+        "site:.europa.eu \"Internal Audit Service\" \"annual list of contracts\" pdf",
+        "site:.europa.eu \"Internal Audit Service\" \"specific contract\" pdf"
+      ]
+    }
+  ]
+}

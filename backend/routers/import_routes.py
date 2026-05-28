@@ -7,14 +7,14 @@ from typing import Optional
 from fastapi import APIRouter, Depends, HTTPException, UploadFile, File
 from sqlmodel import Session, select
 
-from db import get_session
-from models import (
+from backend.db import get_session
+from backend.models import (
     PastAllocation, ImportLog, ImportLogOut, Annex71StatusOut,
     TedSearchRequest, TedNotice, TedConfirmRequest,
 )
-from services import annex71 as annex71_svc
-from services.ted_search import search_ted
-from services.entity_matcher import match_entity
+from backend.services import annex71 as annex71_svc
+from backend.services.ted_search import search_ted
+from backend.services.entity_matcher import match_entity
 
 router = APIRouter(prefix="/api/import", tags=["import"])
 
@@ -61,7 +61,7 @@ def ted_confirm(req: TedConfirmRequest, session: Session = Depends(get_session))
 
 @router.post("/csv/allocations")
 async def import_csv(file: UploadFile = File(...), session: Session = Depends(get_session)):
-    """Accept CSV with columns: entity_name, client_name, contract_title, contract_value_eur, hacs_field, role"""
+    """Accept CSV with required columns entity_name, client_name, contract_title and optional historical-award fields."""
     content = await file.read()
     text = content.decode("utf-8-sig")
     reader = csv.DictReader(io.StringIO(text))
@@ -84,9 +84,18 @@ async def import_csv(file: UploadFile = File(...), session: Session = Depends(ge
             entity_name_raw=entity_raw,
             client_name=client,
             contract_title=title,
+            supplier_name=_clean_optional(row.get("supplier_name")),
+            contract_start=_parse_date(row.get("contract_start")),
+            contract_end=_parse_date(row.get("contract_end")),
             contract_value_eur=_parse_float(row.get("contract_value_eur")),
+            invoiced_by_entity_eur=_parse_float(row.get("invoiced_by_entity_eur")),
             role=row.get("role"),
             hacs_field=hacs_field,
+            field_of_expertise=_clean_optional(row.get("field_of_expertise")),
+            framework_reference=_clean_optional(row.get("framework_reference")),
+            lot_reference=_clean_optional(row.get("lot_reference")),
+            source_url=_clean_optional(row.get("source_url")),
+            confidence_of_match=_parse_float(row.get("confidence_of_match")),
             source="csv",
         ))
         count += 1
@@ -132,3 +141,24 @@ def _parse_float(v) -> Optional[float]:
         return float(v)
     except (TypeError, ValueError):
         return None
+
+
+def _parse_date(v) -> Optional[date]:
+    if v is None:
+        return None
+    if isinstance(v, date):
+        return v
+    text = str(v).strip()
+    if not text:
+        return None
+    try:
+        return date.fromisoformat(text)
+    except ValueError:
+        return None
+
+
+def _clean_optional(v) -> Optional[str]:
+    if v is None:
+        return None
+    text = str(v).strip()
+    return text or None

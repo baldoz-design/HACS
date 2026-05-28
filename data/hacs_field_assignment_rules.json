@@ -1,0 +1,287 @@
+{
+  "version": "2026-05-25",
+  "weights": {
+    "mission_fit": 45,
+    "procurement_fit": 25,
+    "execution_fit": 20,
+    "semantic_fit": 10
+  },
+  "fields": {
+    "1": {
+      "label": "IT Strategy & Governance",
+      "mission_keywords": [
+        "cybersecurity",
+        "large-scale it",
+        "it systems",
+        "digital services",
+        "technology",
+        "communications networks",
+        "infrastructure",
+        "interoperability",
+        "security",
+        "informatics"
+      ],
+      "entity_type_keywords": [
+        "cybersecurity",
+        "large-scale it systems",
+        "digital services",
+        "publications office",
+        "informatics",
+        "telecommunication"
+      ],
+      "procurement_keywords": [
+        "it strategy",
+        "ict",
+        "enterprise architecture",
+        "cybersecurity",
+        "cloud",
+        "infrastructure",
+        "systems integration",
+        "it governance",
+        "interoperability",
+        "digital workplace"
+      ],
+      "execution_keywords": [
+        "it services",
+        "it maintenance",
+        "architecture",
+        "cybersecurity",
+        "system governance",
+        "functional audit",
+        "eudamed"
+      ],
+      "semantic_keywords": [
+        "it",
+        "ict",
+        "architecture",
+        "systems",
+        "platform",
+        "cloud",
+        "security"
+      ]
+    },
+    "2": {
+      "label": "Project & Programme Management",
+      "mission_keywords": [
+        "executive agency",
+        "joint undertaking",
+        "programme",
+        "programmes",
+        "research executive",
+        "innovation council",
+        "funding",
+        "grants",
+        "implementation",
+        "work programme"
+      ],
+      "entity_type_keywords": [
+        "executive agency",
+        "joint undertaking",
+        "agency for support",
+        "programme",
+        "fund",
+        "research council"
+      ],
+      "procurement_keywords": [
+        "pmo",
+        "project management",
+        "programme management",
+        "portfolio management",
+        "grant management",
+        "implementation support",
+        "coordination",
+        "monitoring",
+        "reporting"
+      ],
+      "execution_keywords": [
+        "project support",
+        "programme support",
+        "visitor process",
+        "coordination",
+        "implementation",
+        "advisory and consultancy"
+      ],
+      "semantic_keywords": [
+        "project",
+        "programme",
+        "program",
+        "portfolio",
+        "coordination",
+        "grant",
+        "monitoring"
+      ]
+    },
+    "3": {
+      "label": "Organisational Transformation",
+      "mission_keywords": [
+        "authority",
+        "new authority",
+        "training",
+        "labour",
+        "education",
+        "culture",
+        "human resources",
+        "administration",
+        "capacity",
+        "skills"
+      ],
+      "entity_type_keywords": [
+        "authority",
+        "training",
+        "education",
+        "labour",
+        "human resources",
+        "administration",
+        "schools"
+      ],
+      "procurement_keywords": [
+        "organisational design",
+        "organizational design",
+        "change management",
+        "process improvement",
+        "operating model",
+        "capacity building",
+        "training",
+        "stakeholder engagement"
+      ],
+      "execution_keywords": [
+        "process optimization",
+        "operating model",
+        "capacity building",
+        "training",
+        "skills development",
+        "organisational assessment"
+      ],
+      "semantic_keywords": [
+        "transformation",
+        "change",
+        "operating model",
+        "organisation",
+        "organization",
+        "process",
+        "skills",
+        "training"
+      ]
+    },
+    "4": {
+      "label": "Digital Strategy, Governance, AI & Data",
+      "mission_keywords": [
+        "data",
+        "digital",
+        "statistics",
+        "eurostat",
+        "research",
+        "health",
+        "environment",
+        "chemicals",
+        "food safety",
+        "drugs",
+        "knowledge",
+        "innovation"
+      ],
+      "entity_type_keywords": [
+        "data protection",
+        "eurostat",
+        "research",
+        "health",
+        "environment",
+        "chemicals",
+        "food safety",
+        "drugs",
+        "innovation"
+      ],
+      "procurement_keywords": [
+        "data strategy",
+        "artificial intelligence",
+        "ai",
+        "analytics",
+        "business intelligence",
+        "digital governance",
+        "data spaces",
+        "dashboard",
+        "knowledge hub",
+        "secure processing"
+      ],
+      "execution_keywords": [
+        "healthdata",
+        "knowledge hub",
+        "data governance",
+        "digital strategy",
+        "analytics",
+        "secure processing",
+        "data space"
+      ],
+      "semantic_keywords": [
+        "digital",
+        "data",
+        "ai",
+        "analytics",
+        "dashboard",
+        "knowledge hub",
+        "platform",
+        "governance"
+      ]
+    },
+    "5": {
+      "label": "Audit, Risk & Compliance",
+      "mission_keywords": [
+        "audit",
+        "anti-fraud",
+        "anti-money laundering",
+        "prosecutor",
+        "court",
+        "justice",
+        "supervisor",
+        "securities",
+        "insurance",
+        "bank",
+        "financial",
+        "data protection",
+        "border",
+        "law enforcement"
+      ],
+      "entity_type_keywords": [
+        "court",
+        "audit",
+        "prosecutor",
+        "supervisor",
+        "authority",
+        "financial",
+        "law enforcement",
+        "border",
+        "ombudsman"
+      ],
+      "procurement_keywords": [
+        "audit",
+        "risk assessment",
+        "compliance",
+        "internal control",
+        "legal assessment",
+        "regulatory support",
+        "evaluation",
+        "assurance",
+        "quality review",
+        "data protection"
+      ],
+      "execution_keywords": [
+        "compliance checks",
+        "functional audit",
+        "risk",
+        "controls assessment",
+        "regulatory evaluation",
+        "quality review"
+      ],
+      "semantic_keywords": [
+        "audit",
+        "risk",
+        "compliance",
+        "control",
+        "assurance",
+        "regulatory",
+        "supervision",
+        "enforcement",
+        "legal"
+      ]
+    }
+  }
+}

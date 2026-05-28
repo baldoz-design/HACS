@@ -3,8 +3,8 @@ from typing import List, Dict
 from fastapi import APIRouter, Depends
 from sqlmodel import Session, select
 
-from db import get_session
-from models import ProviderService, CombinedPackage, ServiceOut, PackageOut
+from backend.db import get_session
+from backend.models import ProviderService, CombinedPackage, ServiceOut, PackageOut
 
 router = APIRouter(prefix="/api", tags=["services"])
 

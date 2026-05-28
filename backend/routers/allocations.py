@@ -1,8 +1,8 @@
 from fastapi import APIRouter, Depends
 from sqlmodel import Session, select
 
-from db import get_session
-from models import PastAllocation, Entity, PastAllocationOut
+from backend.db import get_session
+from backend.models import PastAllocation, Entity, PastAllocationOut
 
 router = APIRouter(prefix="/api/allocations", tags=["allocations"])
 
@@ -22,6 +22,7 @@ def list_allocations(session: Session = Depends(get_session)):
             entity_acronym=ent.acronym if ent else None,
             client_name=r.client_name,
             contract_title=r.contract_title,
+            supplier_name=r.supplier_name,
             contract_start=r.contract_start,
             contract_end=r.contract_end,
             contract_value_eur=r.contract_value_eur,
@@ -29,6 +30,10 @@ def list_allocations(session: Session = Depends(get_session)):
             role=r.role,
             hacs_field=r.hacs_field,
             field_of_expertise=r.field_of_expertise,
+            framework_reference=r.framework_reference,
+            lot_reference=r.lot_reference,
+            source_url=r.source_url,
+            confidence_of_match=r.confidence_of_match,
             source=r.source,
         ))
     return result

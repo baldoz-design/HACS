@@ -4,8 +4,8 @@ from typing import Optional
 from fastapi import APIRouter, Depends, HTTPException
 from sqlmodel import Session, select
 
-from db import get_session
-from models import Entity, OutreachRequest, OutreachResult, AIStatusOut
+from backend.db import get_session
+from backend.models import Entity, OutreachRequest, OutreachResult, AIStatusOut
 
 router = APIRouter(prefix="/api", tags=["outreach"])
 

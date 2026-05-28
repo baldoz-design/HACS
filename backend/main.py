@@ -2,9 +2,18 @@ from contextlib import asynccontextmanager
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from db import init_db
-from seed import run_seed
-from routers import entities, services, scenarios, import_routes, allocations, outreach
+from backend.db import init_db
+from backend.seed import run_seed
+from backend.routers import (
+    allocations,
+    entities,
+    hacs_assignments,
+    import_routes,
+    intelligence,
+    outreach,
+    scenarios,
+    services,
+)
 
 
 @asynccontextmanager
@@ -28,10 +37,12 @@ app.add_middleware(
 )
 
 app.include_router(entities.router)
+app.include_router(hacs_assignments.router)
 app.include_router(services.router)
 app.include_router(scenarios.router)
 app.include_router(import_routes.router)
 app.include_router(allocations.router)
+app.include_router(intelligence.router)
 app.include_router(outreach.router)
 
 

@@ -1,4 +1,7 @@
-export const API_BASE = "http://localhost:8001";
+const rawApiBase =
+  process.env.NEXT_PUBLIC_API_BASE_URL ?? "http://localhost:8001";
+
+export const API_BASE = rawApiBase.replace(/\/$/, "");
 
 export interface ApiEntity {
   id: number;
@@ -141,6 +144,7 @@ export interface PastAllocationOut {
   entity_acronym: string | null;
   client_name: string;
   contract_title: string;
+  supplier_name: string | null;
   contract_start: string | null;
   contract_end: string | null;
   contract_value_eur: number | null;
@@ -148,6 +152,10 @@ export interface PastAllocationOut {
   role: string | null;
   hacs_field: number | null;
   field_of_expertise: string | null;
+  framework_reference: string | null;
+  lot_reference: string | null;
+  source_url: string | null;
+  confidence_of_match: number | null;
   source: string;
 }
 
@@ -167,12 +175,30 @@ export interface Annex71Status {
   last_imported: string | null;
 }
 
+export interface BeaconHistoricalStatus {
+  records: number;
+  last_synced: string | null;
+  framework_reference: string;
+}
+
+export interface BeaconExecutionStatus {
+  records: number;
+  supplier_specific_records: number;
+  framework_aggregate_records: number;
+  last_synced: string | null;
+  framework_reference: string;
+  sources_file: string;
+}
+
 export interface TedNotice {
   notice_id: string;
   title: string;
   entity_name: string;
   client_name: string;
   contract_value_eur: number | null;
+  estimated_value_eur: number | null;
+  award_value_eur: number | null;
+  cpv_codes: string[];
   publication_date: string | null;
   field_guess: number | null;
 }
@@ -181,6 +207,101 @@ export interface AIStatus {
   available: boolean;
   provider: string | null;
   model: string | null;
+}
+
+export interface ApiIntelligenceSignal {
+  source: string;
+  title: string;
+  summary: string;
+  date: string | null;
+  url: string | null;
+  field_guess: number | null;
+  contract_value_eur: number | null;
+  estimated_value_eur: number | null;
+  award_value_eur: number | null;
+  cpv_codes: string[];
+  relevance_score: number;
+  client_name: string | null;
+}
+
+export interface ApiEntityIntelligence {
+  id: number;
+  entity_id: number;
+  need_statement: string;
+  primary_field: number | null;
+  secondary_field: number | null;
+  confidence: "High" | "Medium" | "Low";
+  provider_match: string;
+  recommended_action: string;
+  signals: ApiIntelligenceSignal[];
+  summary: {
+    signal_count: number;
+    source_counts: Record<string, number>;
+    field_counts: Record<string, number>;
+    aliases_used: string[];
+    ted_counts?: {
+      mode: "recent" | "historical_fallback" | "cpv_filtered";
+      recent: number;
+      historical: number;
+      displayed: number;
+      total_examined: number;
+      cpv_filtered?: number;
+      cpv_prefixes?: string[];
+    };
+    ted_topics?: {
+      mode: "recent" | "historical_fallback" | "cpv_filtered";
+      total_analyzed: number;
+      dominant_topic: string | null;
+      topics: {
+        topic: string;
+        count: number;
+        share: number;
+        hacs_field: number | null;
+        examples: string[];
+      }[];
+    };
+  };
+  created_at: string;
+}
+
+export interface ApiIntelligenceRefreshRun {
+  id: number;
+  status: string;
+  scope: string;
+  total_entities: number;
+  processed_entities: number;
+  succeeded_entities: number;
+  failed_entities: number;
+  max_results_per_entity: number;
+  error_message: string | null;
+  started_at: string;
+  updated_at: string;
+  completed_at: string | null;
+}
+
+export interface ApiHacsAssignment {
+  id: number;
+  entity_id: number;
+  primary_field: number | null;
+  secondary_field: number | null;
+  confidence: "High" | "Medium" | "Low";
+  status: string;
+  rationale: string;
+  field_scores: Record<
+    string,
+    {
+      total: number;
+      mission_fit: number;
+      procurement_fit: number;
+      execution_fit: number;
+      semantic_fit: number;
+    }
+  >;
+  evidence: Record<string, unknown>;
+  model_version: string;
+  locked_by_user: boolean;
+  created_at: string;
+  updated_at: string;
 }
 
 export interface OutreachResult {
@@ -240,6 +361,62 @@ export async function fetchAIStatus(): Promise<AIStatus> {
   return r.json();
 }
 
+export async function fetchIntelligence(entity_ids?: number[]): Promise<ApiEntityIntelligence[]> {
+  const url = new URL(`${API_BASE}/api/intelligence`);
+  entity_ids?.forEach((id) => url.searchParams.append("entity_ids", String(id)));
+  const r = await fetch(url.toString());
+  if (!r.ok) throw new Error("Failed to fetch intelligence");
+  return r.json();
+}
+
+export async function refreshIntelligence(req: {
+  entity_ids: number[];
+  max_results_per_entity?: number;
+}): Promise<ApiEntityIntelligence[]> {
+  const r = await fetch(`${API_BASE}/api/intelligence/refresh`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(req),
+  });
+  if (!r.ok) throw new Error("Intelligence refresh failed");
+  return r.json();
+}
+
+export async function refreshAllIntelligence(max_results_per_entity = 6): Promise<ApiIntelligenceRefreshRun> {
+  const url = new URL(`${API_BASE}/api/intelligence/refresh/all`);
+  url.searchParams.set("max_results_per_entity", String(max_results_per_entity));
+  const r = await fetch(url.toString(), { method: "POST" });
+  if (!r.ok) throw new Error("Full intelligence refresh failed");
+  return r.json();
+}
+
+export async function fetchIntelligenceRefreshStatus(): Promise<ApiIntelligenceRefreshRun | null> {
+  const r = await fetch(`${API_BASE}/api/intelligence/refresh/status`);
+  if (!r.ok) throw new Error("Failed to fetch intelligence refresh status");
+  return r.json();
+}
+
+export async function fetchHacsAssignments(entity_ids?: number[]): Promise<ApiHacsAssignment[]> {
+  const url = new URL(`${API_BASE}/api/hacs-assignments`);
+  entity_ids?.forEach((id) => url.searchParams.append("entity_ids", String(id)));
+  const r = await fetch(url.toString());
+  if (!r.ok) throw new Error("Failed to fetch HACS assignments");
+  return r.json();
+}
+
+export async function generateHacsAssignments(req: {
+  entity_ids?: number[];
+  apply_to_entities?: boolean;
+} = {}): Promise<ApiHacsAssignment[]> {
+  const r = await fetch(`${API_BASE}/api/hacs-assignments/generate`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(req),
+  });
+  if (!r.ok) throw new Error("Failed to generate HACS assignments");
+  return r.json();
+}
+
 export async function generateOutreach(req: {
   entity_id: number;
   purpose: string;
@@ -252,5 +429,67 @@ export async function generateOutreach(req: {
     body: JSON.stringify(req),
   });
   if (!r.ok) throw new Error("Outreach generation failed");
+  return r.json();
+}
+
+export async function fetchBeaconHistoricalStatus(): Promise<BeaconHistoricalStatus> {
+  const r = await fetch(`${API_BASE}/api/intelligence/historical/beacon/status`);
+  if (!r.ok) throw new Error("Failed to fetch BEACON status");
+  return r.json();
+}
+
+export async function refreshBeaconHistorical(): Promise<{
+  records_imported: number;
+  notices_found: number;
+  award_rows_found?: number;
+  matched_entities: number;
+}> {
+  const r = await fetch(`${API_BASE}/api/intelligence/historical/beacon/refresh`, {
+    method: "POST",
+  });
+  if (!r.ok) throw new Error("Failed to refresh BEACON historical awards");
+  return r.json();
+}
+
+export async function fetchBeaconExecutionStatus(): Promise<BeaconExecutionStatus> {
+  const r = await fetch(`${API_BASE}/api/intelligence/historical/beacon/execution/status`);
+  if (!r.ok) throw new Error("Failed to fetch BEACON execution status");
+  return r.json();
+}
+
+export async function fetchBeaconExecutionDiscoveryStatus(): Promise<BeaconExecutionStatus> {
+  const r = await fetch(`${API_BASE}/api/intelligence/historical/beacon/execution/discovery/status`);
+  if (!r.ok) throw new Error("Failed to fetch BEACON execution discovery status");
+  return r.json();
+}
+
+export async function refreshBeaconExecution(): Promise<{
+  records_imported: number;
+  matched_entities: number;
+  supplier_specific_records: number;
+  framework_aggregate_records: number;
+  framework_reference: string;
+  sources_file: string;
+}> {
+  const r = await fetch(`${API_BASE}/api/intelligence/historical/beacon/execution/refresh`, {
+    method: "POST",
+  });
+  if (!r.ok) throw new Error("Failed to refresh BEACON execution signals");
+  return r.json();
+}
+
+export async function refreshBeaconExecutionDiscovery(): Promise<{
+  records_imported: number;
+  matched_entities: number;
+  supplier_specific_records: number;
+  framework_aggregate_records: number;
+  validation_errors: string[];
+  framework_reference: string;
+  sources_file: string;
+}> {
+  const r = await fetch(`${API_BASE}/api/intelligence/historical/beacon/execution/discovery/refresh`, {
+    method: "POST",
+  });
+  if (!r.ok) throw new Error("Failed to refresh BEACON execution discovery");
   return r.json();
 }

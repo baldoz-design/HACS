@@ -57,6 +57,54 @@ class Scenario(SQLModel, table=True):
     created_at: datetime = Field(default_factory=datetime.utcnow)
 
 
+class EntityIntelligenceSnapshot(SQLModel, table=True):
+    __tablename__ = "entity_intelligence_snapshot"
+    id: Optional[int] = Field(default=None, primary_key=True)
+    entity_id: int = Field(index=True)
+    need_statement: str
+    primary_field: Optional[int] = None
+    secondary_field: Optional[int] = None
+    confidence: str
+    provider_match: str
+    recommended_action: str
+    signals_json: str
+    summary_json: str
+    created_at: datetime = Field(default_factory=datetime.utcnow)
+
+
+class IntelligenceRefreshRun(SQLModel, table=True):
+    __tablename__ = "intelligence_refresh_run"
+    id: Optional[int] = Field(default=None, primary_key=True)
+    status: str = Field(index=True)
+    scope: str = "all_entities"
+    total_entities: int = 0
+    processed_entities: int = 0
+    succeeded_entities: int = 0
+    failed_entities: int = 0
+    max_results_per_entity: int = 6
+    error_message: Optional[str] = None
+    started_at: datetime = Field(default_factory=datetime.utcnow)
+    updated_at: datetime = Field(default_factory=datetime.utcnow)
+    completed_at: Optional[datetime] = None
+
+
+class EntityHacsAssignment(SQLModel, table=True):
+    __tablename__ = "entity_hacs_assignment"
+    id: Optional[int] = Field(default=None, primary_key=True)
+    entity_id: int = Field(index=True)
+    primary_field: Optional[int] = None
+    secondary_field: Optional[int] = None
+    confidence: str
+    status: str = Field(default="suggested", index=True)
+    rationale: str
+    field_scores_json: str
+    evidence_json: str
+    model_version: str
+    locked_by_user: bool = False
+    created_at: datetime = Field(default_factory=datetime.utcnow)
+    updated_at: datetime = Field(default_factory=datetime.utcnow)
+
+
 # ── Request / Response bodies ──────────────────────────────────────────
 
 class TeamMix(BaseModel):
@@ -144,6 +192,7 @@ class PastAllocation(SQLModel, table=True):
     entity_name_raw: str
     client_name: str
     contract_title: str
+    supplier_name: Optional[str] = None
     contract_start: Optional[date] = None
     contract_end: Optional[date] = None
     contract_value_eur: Optional[float] = None
@@ -151,6 +200,10 @@ class PastAllocation(SQLModel, table=True):
     role: Optional[str] = None
     hacs_field: Optional[int] = None
     field_of_expertise: Optional[str] = None
+    framework_reference: Optional[str] = None
+    lot_reference: Optional[str] = None
+    source_url: Optional[str] = None
+    confidence_of_match: Optional[float] = None
     source: str = "annex71"
 
 
@@ -181,6 +234,7 @@ class PastAllocationOut(BaseModel):
     entity_acronym: Optional[str]
     client_name: str
     contract_title: str
+    supplier_name: Optional[str]
     contract_start: Optional[date]
     contract_end: Optional[date]
     contract_value_eur: Optional[float]
@@ -188,6 +242,10 @@ class PastAllocationOut(BaseModel):
     role: Optional[str]
     hacs_field: Optional[int]
     field_of_expertise: Optional[str]
+    framework_reference: Optional[str]
+    lot_reference: Optional[str]
+    source_url: Optional[str]
+    confidence_of_match: Optional[float]
     source: str
 
 
@@ -218,6 +276,9 @@ class TedNotice(BaseModel):
     entity_name: str
     client_name: str
     contract_value_eur: Optional[float]
+    estimated_value_eur: Optional[float] = None
+    award_value_eur: Optional[float] = None
+    cpv_codes: List[str] = []
     publication_date: Optional[str]
     field_guess: Optional[int]
 
@@ -244,3 +305,73 @@ class AIStatusOut(BaseModel):
     available: bool
     provider: Optional[str] = None
     model: Optional[str] = None
+
+
+class IntelligenceSignalOut(BaseModel):
+    source: str
+    title: str
+    summary: str
+    date: Optional[str] = None
+    url: Optional[str] = None
+    field_guess: Optional[int] = None
+    contract_value_eur: Optional[float] = None
+    estimated_value_eur: Optional[float] = None
+    award_value_eur: Optional[float] = None
+    cpv_codes: List[str] = []
+    relevance_score: float
+    client_name: Optional[str] = None
+
+
+class EntityIntelligenceOut(BaseModel):
+    id: int
+    entity_id: int
+    need_statement: str
+    primary_field: Optional[int]
+    secondary_field: Optional[int]
+    confidence: str
+    provider_match: str
+    recommended_action: str
+    signals: List[IntelligenceSignalOut]
+    summary: dict
+    created_at: datetime
+
+
+class IntelligenceRefreshRequest(BaseModel):
+    entity_ids: List[int]
+    max_results_per_entity: int = 8
+
+
+class IntelligenceRefreshRunOut(BaseModel):
+    id: int
+    status: str
+    scope: str
+    total_entities: int
+    processed_entities: int
+    succeeded_entities: int
+    failed_entities: int
+    max_results_per_entity: int
+    error_message: Optional[str]
+    started_at: datetime
+    updated_at: datetime
+    completed_at: Optional[datetime]
+
+
+class HacsAssignmentOut(BaseModel):
+    id: int
+    entity_id: int
+    primary_field: Optional[int]
+    secondary_field: Optional[int]
+    confidence: str
+    status: str
+    rationale: str
+    field_scores: dict
+    evidence: dict
+    model_version: str
+    locked_by_user: bool
+    created_at: datetime
+    updated_at: datetime
+
+
+class HacsAssignmentGenerateRequest(BaseModel):
+    entity_ids: Optional[List[int]] = None
+    apply_to_entities: bool = False
