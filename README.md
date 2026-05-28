@@ -22,6 +22,16 @@ The repository contains:
 `-- .env.example          # local environment template
 ```
 
+## Agent Onboarding
+
+Agents and future contributors should start from:
+
+```text
+docs/agent-onboarding.md
+```
+
+It explains the product intent, source-quality rules, data pipelines, page map, known caveats, and safe development workflow.
+
 ## Prerequisites
 
 - Node.js 24+
