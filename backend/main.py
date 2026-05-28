@@ -1,4 +1,6 @@
 from contextlib import asynccontextmanager
+import os
+
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
@@ -25,13 +27,21 @@ async def lifespan(app: FastAPI):
 
 app = FastAPI(title="HACS Intelligence API", lifespan=lifespan)
 
+default_cors_origins = [
+    "http://localhost:3000",
+    "http://localhost:3001",
+    "http://localhost:3002",
+    "https://hacs-api.onrender.com",
+]
+extra_cors_origins = [
+    origin.strip()
+    for origin in os.getenv("CORS_ORIGINS", "").split(",")
+    if origin.strip()
+]
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[
-        "http://localhost:3000",
-        "http://localhost:3001",
-        "http://localhost:3002",
-    ],
+    allow_origins=[*default_cors_origins, *extra_cors_origins],
     allow_methods=["*"],
     allow_headers=["*"],
 )
